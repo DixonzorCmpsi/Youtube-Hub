@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Spot AI - Dynamic Studio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700;800&display=swap');
+
+        :root {
+            --neon-blue: #3B82F6;
+            --neon-red: #EF4444;
+            --bg-gradient: radial-gradient(circle at center, #1e293b 0%, #0f172a 70%, #020617 100%);
+        }
+
+        body {
+            margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden;
+            background: transparent; font-family: 'Rajdhani', sans-serif;
+        }
+
+        /* --- 1. BACKGROUND (SVG MASK) --- */
+        .background-layer { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; z-index: 1; }
+
+        /* --- 2. BORDERS (Frames) --- */
+        .frame-website {
+            position: absolute; top: 140px; left: 40px; width: 1360px; height: 800px;
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); z-index: 5;
+            background-image: 
+                linear-gradient(to right, var(--neon-blue) 10px, transparent 10px),
+                linear-gradient(to bottom, var(--neon-blue) 10px, transparent 10px),
+                linear-gradient(to left, var(--neon-blue) 10px, transparent 10px),
+                linear-gradient(to top, var(--neon-blue) 10px, transparent 10px);
+            background-position: 0 0, 0 0, 100% 100%, 100% 100%;
+            background-size: 20px 20px; background-repeat: no-repeat;
+        }
+
+        .frame-camera {
+            position: absolute; top: 140px; right: 40px; width: 450px; height: 800px;
+            border: 3px solid var(--neon-blue);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); z-index: 5;
+            background-image: 
+                linear-gradient(to right, var(--neon-blue) 10px, transparent 10px),
+                linear-gradient(to bottom, var(--neon-blue) 10px, transparent 10px),
+                linear-gradient(to left, var(--neon-blue) 10px, transparent 10px),
+                linear-gradient(to top, var(--neon-blue) 10px, transparent 10px);
+            background-position: 0 0, 0 0, 100% 100%, 100% 100%;
+            background-size: 20px 20px; background-repeat: no-repeat;
+        }
+
+        /* Tags */
+        .label-tag {
+            position: absolute; background: var(--neon-blue); color: white;
+            font-weight: 800; text-transform: uppercase; padding: 2px 12px; font-size: 14px; z-index: 6;
+        }
+        .tag-camera { bottom: -15px; right: 20px; }
+        .tag-website { top: -15px; left: 20px; }
+
+        /* --- 3. LOWER THIRD (Ticker) --- */
+        .lower-third-container {
+            position: absolute; bottom: 30px; left: 40px; right: 40px; height: 70px;
+            display: flex; align-items: center; border-bottom: 3px solid var(--neon-red);
+            background: rgba(15, 23, 42, 0.95); z-index: 10;
+        }
+
+        .show-title {
+            background: linear-gradient(135deg, var(--neon-red), #991B1B);
+            width: 320px; height: 100%; display: flex; align-items: center; justify-content: center;
+            color: white; font-weight: 800; font-size: 26px; text-transform: uppercase; font-style: italic;
+            box-shadow: 5px 0 20px rgba(0,0,0,0.6); z-index: 11;
+        }
+
+        .ticker-wrap {
+            flex-grow: 1; height: 100%; overflow: hidden; white-space: nowrap;
+            position: relative; display: flex; align-items: center; border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .ticker-move {
+            display: flex; white-space: nowrap;
+            /* 90s duration for readable speed */
+            animation: ticker 330s linear infinite;
+        }
+
+        .ticker-item {
+            display: inline-flex; align-items: center;
+            padding: 0 2.5rem; font-size: 24px; color: #e2e8f0; font-weight: 500;
+        }
+        
+        /* Dynamic Accent Colors */
+        .accent-blue { color: var(--neon-blue); font-weight: 700; margin-right: 8px; text-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+        .accent-red { color: var(--neon-red); font-weight: 700; margin-right: 8px; }
+
+        @keyframes ticker {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-50%, 0, 0); }
+        }
+
+        /* --- 4. TOP LOGO --- */
+        .top-logo {
+            position: absolute; top: 40px; left: 50px; color: white;
+            font-size: 32px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px;
+            text-shadow: 0 0 15px var(--neon-blue); z-index: 10;
+        }
+
+    </style>
+</head>
+<body>
+
+    <svg class="background-layer" width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <mask id="cutout-mask">
+                <rect x="0" y="0" width="1920" height="1080" fill="white" />
+                <rect x="40" y="140" width="1360" height="800" fill="black" />
+                <rect x="1430" y="140" width="450" height="800" fill="black" />
+            </mask>
+            <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#020617;stop-opacity:1" />
+            </radialGradient>
+        </defs>
+        <rect x="0" y="0" width="1920" height="1080" fill="url(#grad1)" mask="url(#cutout-mask)" />
+    </svg>
+
+    <div class="top-logo">
+        <span style="color:var(--neon-blue)">THE SPOT</span> AI // <span style="font-size:20px; color:#94a3b8;">GAME SCRIPT BREAKDOWN</span>
+    </div>
+
+    <div class="frame-website">
+        <div class="label-tag tag-website">The Spot Ai</div>
+    </div>
+
+    <div class="frame-camera">
+        <div class="label-tag tag-camera">DeeTalk</div>
+    </div>
+
+    <div class="lower-third-container">
+        <div class="show-title">GAME SCRIPT</div>
+        <div class="ticker-wrap">
+            <div class="ticker-move" id="ticker-content">
+                <div class="ticker-item" style="color:#64748b">Waiting for Data... (Run Python Script)</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ticker_data.js"></script>
+
+    <script>
+        function renderTicker() {
+            const container = document.getElementById('ticker-content');
+            
+            // Safety Check: If python script hasn't run yet
+            if (typeof tickerData === 'undefined') {
+                console.log("Data file not found or empty.");
+                return; 
+            }
+
+            let htmlContent = '';
+            
+            // Function to format each item (Blue for Games, Red for News)
+            const createItem = (item) => {
+                let labelColor = "accent-blue";
+                // Switch color based on type
+                if (item.type === "Topic") labelColor = "accent-red";
+                
+                return `
+                    <div class="ticker-item">
+                        <span class="${labelColor}">${item.text}</span> 
+                        ${item.detail}
+                    </div>
+                `;
+            };
+
+            // Build the HTML string from the data list
+            tickerData.forEach(item => {
+                htmlContent += createItem(item);
+            });
+
+            // DUPLICATE CONTENT 4 TIMES (Ensure smooth loop without gaps)
+            container.innerHTML = htmlContent + htmlContent + htmlContent + htmlContent;
+        }
+
+        // Run immediately on load
+        renderTicker();
+    </script>
+
+</body>
+</html>

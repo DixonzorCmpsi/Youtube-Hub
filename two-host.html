@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Spot AI - Smart Dual Host</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700;800&family=Share+Tech+Mono&display=swap');
+
+        :root {
+            --neon-blue: #3B82F6;
+            --neon-red: #EF4444;
+            --dark-bg: #0f172a;
+            --glass-bg: rgba(15, 23, 42, 0.9);
+        }
+
+        body {
+            margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden;
+            background: transparent;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        /* --- BACKGROUND LAYER --- */
+        .bg-layer {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 70%, #050a14 100%);
+            z-index: -1;
+            clip-path: polygon(
+                0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%, 
+                30px 80px, 30px 880px, 480px 880px, 480px 80px, 30px 80px, /* Left Hole */
+                1440px 80px, 1440px 880px, 1890px 880px, 1890px 80px, 1440px 80px /* Right Hole */
+            );
+        }
+
+        /* --- CENTRAL NEWS WRAPPER (Base) --- */
+        .central-news-wrapper {
+            position: absolute;
+            top: 80px; left: 510px;
+            width: 900px; height: 800px;
+            border: 3px solid #3B82F6;
+            box-shadow: 0 0 35px rgba(59, 130, 246, 0.4);
+            border-radius: 12px; overflow: hidden; background: #000; z-index: 10;
+        }
+
+        /* --- LAYOUT MODE A: SPLIT (Vertical Images) --- */
+        .central-news-wrapper.layout-split {
+            display: flex;
+        }
+        .layout-split .news-image-section {
+            width: 450px; height: 100%; position: relative;
+            border-right: 1px solid #1e293b;
+        }
+        .layout-split #news-img {
+            width: 100%; height: 100%; object-fit: cover; object-position: center 20%;
+        }
+        .layout-split .news-context-section {
+            width: 450px; height: 100%;
+            background: var(--glass-bg);
+            display: flex; flex-direction: column; padding: 30px; box-sizing: border-box;
+        }
+        .layout-split .source-tag {
+            position: absolute; top: 0; left: 0; width: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
+            padding: 15px 20px; color: #EF4444; font-weight: 800; font-size: 28px;
+            text-transform: uppercase; text-shadow: 0 2px 5px black;
+        }
+
+        /* --- LAYOUT MODE B: CINEMATIC (Horizontal Images) --- */
+        .central-news-wrapper.layout-cinematic {
+            display: block; position: relative;
+        }
+        .layout-cinematic .news-image-section {
+            width: 100%; height: 100%; position: absolute; top: 0; left: 0;
+        }
+        .layout-cinematic #news-img {
+            width: 100%; height: 100%; object-fit: cover; object-position: center;
+            opacity: 0.85; /* Slight dim for text readability */
+        }
+        .layout-cinematic .news-context-section {
+            position: absolute; bottom: 30px; right: 30px;
+            width: 400px; max-height: 500px;
+            background: rgba(15, 23, 42, 0.85); /* Floating Chat Style */
+            border-left: 4px solid #3B82F6;
+            backdrop-filter: blur(5px);
+            padding: 25px; border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            display: flex; flex-direction: column;
+        }
+        .layout-cinematic .source-tag {
+            position: absolute; top: 0; left: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
+            padding: 20px 30px; color: #EF4444; font-weight: 800; font-size: 32px;
+            text-transform: uppercase; text-shadow: 0 2px 5px black; z-index: 5;
+        }
+
+        /* --- SHARED TEXT STYLES --- */
+        .context-label {
+            color: #EF4444; font-size: 14px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 2px;
+            font-family: 'Share Tech Mono', monospace; margin-bottom: 10px;
+            display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+        }
+        .context-label::before { content: ''; width: 8px; height: 8px; background: #EF4444; border-radius: 50%; box-shadow: 0 0 10px #EF4444; }
+
+        #stats-text {
+            color: #f1f5f9; font-size: 21px; font-weight: 600; line-height: 1.4;
+            text-shadow: 0 1px 2px black;
+            border-top: 1px solid rgba(59, 130, 246, 0.3); padding-top: 15px;
+            overflow-y: auto; padding-right: 10px;
+        }
+        /* Scrollbar */
+        #stats-text::-webkit-scrollbar { width: 6px; }
+        #stats-text::-webkit-scrollbar-track { background: rgba(0,0,0,0.2); }
+        #stats-text::-webkit-scrollbar-thumb { background: #3B82F6; border-radius: 3px; }
+
+        /* --- DUAL HOST FRAMES --- */
+        .host-frame {
+            position: absolute; top: 80px; width: 450px; height: 800px;
+            border: 3px solid #3B82F6; box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+            border-radius: 12px; pointer-events: none; z-index: 10;
+        }
+        .host-1 { left: 30px; }
+        .host-2 { left: 1440px; }
+        .host-tag {
+            position: absolute; bottom: 0; background: #3B82F6; color: white; padding: 10px 30px; 
+            font-weight: 800; font-size: 20px; text-transform: uppercase; letter-spacing: 2px;
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%); border-top-left-radius: 8px;
+        }
+        .host-2 .host-tag {
+            right: auto; left: 0; clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 0% 100%); 
+            border-top-left-radius: 0; border-top-right-radius: 8px;
+        }
+
+        /* --- HEADLINE BAR --- */
+        .headline-bar {
+            position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%);
+            width: 1380px; height: 110px; background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
+            border-left: 12px solid #EF4444; display: flex; flex-direction: column; justify-content: center;
+            padding: 0 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.6); z-index: 20; border-radius: 0 10px 10px 0;
+        }
+        #headline-text { color: white; font-size: 42px; font-weight: 800; text-transform: uppercase; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+        .sub-headline { color: #94a3b8; font-size: 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;}
+
+        .controls { position: absolute; top: 25px; right: 30px; z-index: 100; }
+        button { background: #EF4444; color: white; border: none; padding: 10px 30px; font-weight: 800; font-size: 20px; cursor: pointer; border-radius: 4px; }
+
+    </style>
+</head>
+<body>
+
+    <div class="bg-layer"></div>
+    <div class="controls"><button onclick="nextStory()">Next Story >></button></div>
+
+    <div id="central-panel" class="central-news-wrapper layout-cinematic">
+        
+        <div class="news-image-section">
+            <div class="source-tag" id="news-source">ESPN</div>
+            <img id="news-img" src="" alt="News Image">
+        </div>
+
+        <div class="news-context-section">
+            <div class="context-label">AI SUMMARY // CONTEXT</div>
+            <div id="stats-text">Loading Data...</div>
+        </div>
+
+    </div>
+
+    <div class="host-frame host-1"><div class="host-tag">DeeTalk</div></div>
+    <div class="host-frame host-2"><div class="host-tag">GUEST</div></div>
+
+    <div class="headline-bar">
+        <div class="sub-headline">NEWS</div>
+        <div id="headline-text">WAITING FOR UPDATES...</div>
+    </div>
+
+    <script src="headline_data.js"></script>
+    <script>
+        let currentIndex = 0;
+
+        function updateDisplay() {
+            if (typeof headlineData === 'undefined' || headlineData.length === 0) return;
+            const story = headlineData[currentIndex];
+            
+            // 1. Update Text Data
+            document.getElementById('headline-text').innerText = story.title;
+            document.getElementById('news-source').innerText = story.source;
+            document.getElementById('stats-text').innerText = story.summary_long || story.summary || "Developing story...";
+            
+            // 2. Load Image & Detect Orientation
+            const img = document.getElementById('news-img');
+            const panel = document.getElementById('central-panel');
+            
+            // Define Image Source
+            let imgSrc = (story.image && story.image.startsWith('http')) ? story.image : "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=600&h=1000&fit=crop";
+            
+            // Create a temporary image in memory to check dimensions
+            let tempImg = new Image();
+            tempImg.src = imgSrc;
+            
+            tempImg.onload = function() {
+                // Apply source to real image
+                img.src = imgSrc;
+                
+                // CHECK ASPECT RATIO
+                // If Height > Width (Portrait) -> Use Split Layout
+                if (tempImg.naturalHeight > tempImg.naturalWidth) {
+                    panel.classList.remove('layout-cinematic');
+                    panel.classList.add('layout-split');
+                } else {
+                    // Else (Landscape/Square) -> Use Cinematic Layout
+                    panel.classList.remove('layout-split');
+                    panel.classList.add('layout-cinematic');
+                }
+            }
+        }
+
+        function nextStory() {
+            if (typeof headlineData === 'undefined') return;
+            currentIndex = (currentIndex + 1) % headlineData.length;
+            updateDisplay();
+        }
+
+        setInterval(() => {
+            const script = document.createElement('script');
+            script.src = 'headline_data.js?v=' + new Date().getTime();
+            script.onload = () => updateDisplay();
+            document.body.appendChild(script);
+        }, 10000);
+        setTimeout(updateDisplay, 500);
+    </script>
+</body>
+</html>

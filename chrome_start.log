@@ -1,0 +1,3070 @@
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 91, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: DevToolsActivePort file doesn't exist; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x12a12d3
+	0x12a1314
+	0x108e6dd
+	0x10c8f1c
+	0x10c51ce
+	0x10bfafa
+	0x1107826
+	0x1107047
+	0x10fb2e6
+	0x10cd321
+	0x10ce1d4
+	0x14f5314
+	0x14f08cb
+	0x150d1aa
+	0x12bb1d8
+	0x12c31dd
+	0x12a95d8
+	0x12a9799
+	0x1293b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 80, in setup_driver
+    return uc.Chrome(options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Retry without profile also failed =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 80, in setup_driver
+    return uc.Chrome(options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 120, in setup_driver
+    return uc.Chrome(options=options2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 81, in setup_driver
+    return uc.Chrome(options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Retry without profile also failed =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 81, in setup_driver
+    return uc.Chrome(options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 121, in setup_driver
+    return uc.Chrome(options=options2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 92, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: DevToolsActivePort file doesn't exist; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x12a12d3
+	0x12a1314
+	0x108e6dd
+	0x10c8f1c
+	0x10c51ce
+	0x10bfafa
+	0x1107826
+	0x1107047
+	0x10fb2e6
+	0x10cd321
+	0x10ce1d4
+	0x14f5314
+	0x14f08cb
+	0x150d1aa
+	0x12bb1d8
+	0x12c31dd
+	0x12a95d8
+	0x12a9799
+	0x1293b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 109, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x12a12d3
+	0x12a1314
+	0x108e6dd
+	0x10c4991
+	0x10bfafa
+	0x1107826
+	0x1107047
+	0x10fb2e6
+	0x10cd321
+	0x10ce1d4
+	0x14f5314
+	0x14f08cb
+	0x150d1aa
+	0x12bb1d8
+	0x12c31dd
+	0x12a95d8
+	0x12a9799
+	0x1293b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 121, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x12a12d3
+	0x12a1314
+	0x108e6dd
+	0x10c4991
+	0x10bfafa
+	0x1107826
+	0x1107047
+	0x10fb2e6
+	0x10cd321
+	0x10ce1d4
+	0x14f5314
+	0x14f08cb
+	0x150d1aa
+	0x12bb1d8
+	0x12c31dd
+	0x12a95d8
+	0x12a9799
+	0x1293b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 105, in setup_driver
+    return uc.Chrome(options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Retry without profile also failed =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 105, in setup_driver
+    return uc.Chrome(options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 145, in setup_driver
+    return uc.Chrome(options=options2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 105, in setup_driver
+    return uc.Chrome(options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Retry without profile also failed =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 105, in setup_driver
+    return uc.Chrome(options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 145, in setup_driver
+    return uc.Chrome(options=options2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 106, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 106, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 139, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11212d3
+	0x1121314
+	0xf0e6dd
+	0xf44991
+	0xf3fafa
+	0xf87826
+	0xf87047
+	0xf7b2e6
+	0xf4d321
+	0xf4e1d4
+	0x1375314
+	0x13708cb
+	0x138d1aa
+	0x113b1d8
+	0x11431dd
+	0x11295d8
+	0x1129799
+	0x1113b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== Retry without profile also failed =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 139, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11212d3
+	0x1121314
+	0xf0e6dd
+	0xf44991
+	0xf3fafa
+	0xf87826
+	0xf87047
+	0xf7b2e6
+	0xf4d321
+	0xf4e1d4
+	0x1375314
+	0x13708cb
+	0x138d1aa
+	0x113b1d8
+	0x11431dd
+	0x11295d8
+	0x1129799
+	0x1113b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 168, in setup_driver
+    return uc.Chrome(options=options2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11212d3
+	0x1121314
+	0xf0e6dd
+	0xf44991
+	0xf3fafa
+	0xf87826
+	0xf87047
+	0xf7b2e6
+	0xf4d321
+	0xf4e1d4
+	0x1375314
+	0x13708cb
+	0x138d1aa
+	0x113b1d8
+	0x11431dd
+	0x11295d8
+	0x1129799
+	0x1113b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11212d3
+	0x1121314
+	0xf0e6dd
+	0xf44991
+	0xf3fafa
+	0xf87826
+	0xf87047
+	0xf7b2e6
+	0xf4d321
+	0xf4e1d4
+	0x1375314
+	0x13708cb
+	0x138d1aa
+	0x113b1d8
+	0x11431dd
+	0x11295d8
+	0x1129799
+	0x1113b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x11212d3
+	0x1121314
+	0xf0e6dd
+	0xf44991
+	0xf3fafa
+	0xf87826
+	0xf87047
+	0xf7b2e6
+	0xf4d321
+	0xf4e1d4
+	0x1375314
+	0x13708cb
+	0x138d1aa
+	0x113b1d8
+	0x11431dd
+	0x11295d8
+	0x1129799
+	0x1113b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x6f12d3
+	0x6f1314
+	0x4de6dd
+	0x514991
+	0x50fafa
+	0x557826
+	0x557047
+	0x54b2e6
+	0x51d321
+	0x51e1d4
+	0x945314
+	0x9408cb
+	0x95d1aa
+	0x70b1d8
+	0x7131dd
+	0x6f95d8
+	0x6f9799
+	0x6e3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x6f12d3
+	0x6f1314
+	0x4de6dd
+	0x514991
+	0x50fafa
+	0x557826
+	0x557047
+	0x54b2e6
+	0x51d321
+	0x51e1d4
+	0x945314
+	0x9408cb
+	0x95d1aa
+	0x70b1d8
+	0x7131dd
+	0x6f95d8
+	0x6f9799
+	0x6e3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x6f12d3
+	0x6f1314
+	0x4de6dd
+	0x514991
+	0x50fafa
+	0x557826
+	0x557047
+	0x54b2e6
+	0x51d321
+	0x51e1d4
+	0x945314
+	0x9408cb
+	0x95d1aa
+	0x70b1d8
+	0x7131dd
+	0x6f95d8
+	0x6f9799
+	0x6e3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xdd12d3
+	0xdd1314
+	0xbbe6dd
+	0xbf4991
+	0xbefafa
+	0xc37826
+	0xc37047
+	0xc2b2e6
+	0xbfd321
+	0xbfe1d4
+	0x1025314
+	0x10208cb
+	0x103d1aa
+	0xdeb1d8
+	0xdf31dd
+	0xdd95d8
+	0xdd9799
+	0xdc3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xdd12d3
+	0xdd1314
+	0xbbe6dd
+	0xbf4991
+	0xbefafa
+	0xc37826
+	0xc37047
+	0xc2b2e6
+	0xbfd321
+	0xbfe1d4
+	0x1025314
+	0x10208cb
+	0x103d1aa
+	0xdeb1d8
+	0xdf31dd
+	0xdd95d8
+	0xdd9799
+	0xdc3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xdd12d3
+	0xdd1314
+	0xbbe6dd
+	0xbf4991
+	0xbefafa
+	0xc37826
+	0xc37047
+	0xc2b2e6
+	0xbfd321
+	0xbfe1d4
+	0x1025314
+	0x10208cb
+	0x103d1aa
+	0xdeb1d8
+	0xdf31dd
+	0xdd95d8
+	0xdd9799
+	0xdc3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xdd12d3
+	0xdd1314
+	0xbbe6dd
+	0xbf4991
+	0xbefafa
+	0xc37826
+	0xc37047
+	0xc2b2e6
+	0xbfd321
+	0xbfe1d4
+	0x1025314
+	0x10208cb
+	0x103d1aa
+	0xdeb1d8
+	0xdf31dd
+	0xdd95d8
+	0xdd9799
+	0xdc3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xdd12d3
+	0xdd1314
+	0xbbe6dd
+	0xbf4991
+	0xbefafa
+	0xc37826
+	0xc37047
+	0xc2b2e6
+	0xbfd321
+	0xbfe1d4
+	0x1025314
+	0x10208cb
+	0x103d1aa
+	0xdeb1d8
+	0xdf31dd
+	0xdd95d8
+	0xdd9799
+	0xdc3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xdd12d3
+	0xdd1314
+	0xbbe6dd
+	0xbf4991
+	0xbefafa
+	0xc37826
+	0xc37047
+	0xc2b2e6
+	0xbfd321
+	0xbfe1d4
+	0x1025314
+	0x10208cb
+	0x103d1aa
+	0xdeb1d8
+	0xdf31dd
+	0xdd95d8
+	0xdd9799
+	0xdc3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xdd12d3
+	0xdd1314
+	0xbbe6dd
+	0xbf4991
+	0xbefafa
+	0xc37826
+	0xc37047
+	0xc2b2e6
+	0xbfd321
+	0xbfe1d4
+	0x1025314
+	0x10208cb
+	0x103d1aa
+	0xdeb1d8
+	0xdf31dd
+	0xdd95d8
+	0xdd9799
+	0xdc3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xdd12d3
+	0xdd1314
+	0xbbe6dd
+	0xbf4991
+	0xbefafa
+	0xc37826
+	0xc37047
+	0xc2b2e6
+	0xbfd321
+	0xbfe1d4
+	0x1025314
+	0x10208cb
+	0x103d1aa
+	0xdeb1d8
+	0xdf31dd
+	0xdd95d8
+	0xdd9799
+	0xdc3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xdd12d3
+	0xdd1314
+	0xbbe6dd
+	0xbf4991
+	0xbefafa
+	0xc37826
+	0xc37047
+	0xc2b2e6
+	0xbfd321
+	0xbfe1d4
+	0x1025314
+	0x10208cb
+	0x103d1aa
+	0xdeb1d8
+	0xdf31dd
+	0xdd95d8
+	0xdd9799
+	0xdc3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 111, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 111, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 181, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xdd12d3
+	0xdd1314
+	0xbbe6dd
+	0xbf4991
+	0xbefafa
+	0xc37826
+	0xc37047
+	0xc2b2e6
+	0xbfd321
+	0xbfe1d4
+	0x1025314
+	0x10208cb
+	0x103d1aa
+	0xdeb1d8
+	0xdf31dd
+	0xdd95d8
+	0xdd9799
+	0xdc3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 181, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xdd12d3
+	0xdd1314
+	0xbbe6dd
+	0xbf4991
+	0xbefafa
+	0xc37826
+	0xc37047
+	0xc2b2e6
+	0xbfd321
+	0xbfe1d4
+	0x1025314
+	0x10208cb
+	0x103d1aa
+	0xdeb1d8
+	0xdf31dd
+	0xdd95d8
+	0xdd9799
+	0xdc3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 111, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 181, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xdd12d3
+	0xdd1314
+	0xbbe6dd
+	0xbf4991
+	0xbefafa
+	0xc37826
+	0xc37047
+	0xc2b2e6
+	0xbfd321
+	0xbfe1d4
+	0x1025314
+	0x10208cb
+	0x103d1aa
+	0xdeb1d8
+	0xdf31dd
+	0xdd95d8
+	0xdd9799
+	0xdc3b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 111, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 192, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 122, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== Browser start failure =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+
+===== undetected_chromedriver WinError 17 =====
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 180, in setup_driver
+    return webdriver.Chrome(service=service, options=options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 46, in __init__
+    super().__init__(
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 67, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 257, in __init__
+    self.start_session(capabilities)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 352, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 432, in execute
+    self.error_handler.check_response(response)
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0xa812d3
+	0xa81314
+	0x86e6dd
+	0x8a4991
+	0x89fafa
+	0x8e7826
+	0x8e7047
+	0x8db2e6
+	0x8ad321
+	0x8ae1d4
+	0xcd5314
+	0xcd08cb
+	0xced1aa
+	0xa9b1d8
+	0xaa31dd
+	0xa895d8
+	0xa89799
+	0xa73b28
+	0x75c75d49
+	0x76f7d5db
+	0x76f7d561
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\update_ticker.py", line 110, in try_uc
+    return uc.Chrome(options=chrome_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\__init__.py", line 258, in __init__
+    self.patcher.auto()
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 178, in auto
+    self.unzip_package(self.fetch_package())
+  File "E:\Users\Dixon Zor\Documents\news-scrapper\.venv\Lib\site-packages\undetected_chromedriver\patcher.py", line 310, in unzip_package
+    os.rename(os.path.join(self.zip_path, exe_path), self.executable_path)
+OSError: [WinError 17] The system cannot move the file to a different disk drive: 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\dixon\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+

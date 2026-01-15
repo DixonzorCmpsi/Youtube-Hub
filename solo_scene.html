@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DeeTalk - Sports Broadcast HUD</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+        :root {
+            --brand-purple: #4c1d95; /* Deep purple base */
+            --brand-purple-light: #7c3aed; /* Lighter purple for gradients */
+            --neon-cyan: #06b6d4; /* Bright Cyan accent */
+            --neon-green: #10b981; /* For "Latest" tag */
+            --text-white: #ffffff;
+            --dark-bg: rgba(15, 23, 42, 0.95); /* Nearly opaque dark slate */
+        }
+
+        body {
+            margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden;
+            background: transparent; /* IMPORTANT for OBS */
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        /* --- UTILITIES --- */
+        .skew-box {
+            transform: skewX(-10deg);
+        }
+        .unskew-text {
+            transform: skewX(10deg);
+            display: inline-block;
+        }
+
+        /* --- 1. TOP LEFT LOGO --- */
+        .top-left-logo {
+            position: absolute; top: 40px; left: 40px;
+            display: flex; align-items: center; gap: 10px;
+        }
+        
+        .logo-box {
+            background: linear-gradient(90deg, #2e1065, #5b21b6);
+            padding: 10px 30px;
+            border-left: 5px solid var(--neon-cyan);
+            color: white; font-weight: 900; font-size: 24px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+        }
+
+        .sub-count {
+            background: var(--neon-cyan);
+            color: #0f172a;
+            padding: 8px 15px;
+            font-weight: 800; font-size: 20px;
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        }
+
+        /* --- 2. TOP RIGHT TABLE (LEAGUE TABLE) --- */
+        .sidebar-table {
+            position: absolute; top: 40px; right: 40px;
+            width: 350px;
+            background: var(--dark-bg);
+            color: white;
+            border-top: 5px solid var(--neon-cyan);
+            box-shadow: -5px 5px 20px rgba(0,0,0,0.5);
+        }
+
+        .table-header {
+            background: linear-gradient(90deg, var(--neon-cyan), #3b82f6);
+            padding: 15px;
+            text-align: center;
+        }
+        .table-header h2 { margin: 0; font-family: 'Montserrat', sans-serif; font-size: 22px; text-transform: uppercase; color: #0f172a; }
+        .table-header p { margin: 0; font-size: 14px; font-weight: 700; opacity: 0.8; color: #0f172a;}
+
+        .table-rows {
+            display: flex; flex-direction: column;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .row {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 8px 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .row:nth-child(even) { background: rgba(255,255,255,0.03); }
+        .row span.rank { width: 25px; color: var(--neon-cyan); }
+        .row span.team { flex-grow: 1; text-align: left; margin-left: 10px; text-transform: uppercase;}
+        .row span.pts { color: white; font-weight: 800; }
+
+        /* --- 3. LOWER THIRD MAIN ASSEMBLY --- */
+        .lower-third-container {
+            position: absolute; bottom: 40px; left: 40px;
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+        }
+
+        /* Date Box (Far Left) */
+        .date-box {
+            width: 100px; height: 100px;
+            background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);
+            color: white;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            border-top: 4px solid var(--brand-purple-light);
+            margin-right: 10px;
+            box-shadow: 0 0 15px rgba(76, 29, 149, 0.4);
+        }
+        .date-big { font-size: 42px; font-weight: 900; line-height: 1; }
+        .date-small { font-size: 16px; font-weight: 700; color: var(--neon-cyan); }
+
+        /* Headline & Ticker Container */
+        .main-content-stack {
+            display: flex; flex-direction: column;
+            width: 800px; 
+        }
+
+        /* Main Headline */
+        .headline-bar {
+            background: linear-gradient(90deg, #172554 0%, #1e3a8a 100%);
+            padding: 15px 30px;
+            border-left: 8px solid var(--brand-purple-light);
+            display: flex; align-items: center;
+            height: 60px;
+        }
+        .headline-text {
+            color: white; font-family: 'Montserrat', sans-serif;
+            font-size: 42px; font-weight: 900; text-transform: uppercase;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 1px;
+        }
+
+        /* Ticker Bar */
+        .ticker-bar {
+            background: #0f172a;
+            height: 35px;
+            display: flex; align-items: center;
+            margin-top: 2px;
+            overflow: hidden;
+            position: relative;
+        }
+        .ticker-label {
+            background: var(--brand-purple-light);
+            color: white;
+            padding: 0 15px;
+            height: 100%;
+            display: flex; align-items: center;
+            font-weight: 800;
+            font-size: 14px;
+            z-index: 2;
+        }
+        .ticker-marquee {
+            white-space: nowrap;
+            color: #cbd5e1;
+            font-weight: 600;
+            font-size: 18px;
+            padding-left: 20px;
+            animation: scroll-left 15s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Socials Box */
+        .socials-box {
+            background: linear-gradient(135deg, #2e1065, #0f172a);
+            height: 100px; width: 200px;
+            margin-left: 10px;
+            border-bottom: 4px solid var(--neon-cyan);
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            color: white;
+        }
+        .social-handle { font-size: 20px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+        .social-icon { color: var(--neon-cyan); }
+
+        /* --- 4. BOTTOM RIGHT INTERACTION (POLL) --- */
+        .poll-box {
+            position: absolute; bottom: 40px; right: 40px;
+            width: 400px; height: 140px;
+            background: linear-gradient(135deg, #0f172a, #1e1b4b);
+            border-right: 8px solid var(--neon-cyan);
+            display: flex;
+        }
+        
+        .poll-icon-area {
+            width: 80px; background: var(--neon-cyan);
+            display: flex; justify-content: center; align-items: center;
+            font-size: 40px; color: #0f172a; font-weight: 900;
+        }
+
+        .poll-content {
+            flex-grow: 1; padding: 20px;
+            display: flex; justify-content: center; align-items: center; text-align: center;
+        }
+        .poll-text {
+            color: white; font-family: 'Montserrat', sans-serif;
+            font-size: 24px; font-weight: 800; text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        /* --- BORDER FRAME (Optional - Adds that purple glow around the cam) --- */
+        .cam-border {
+            position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px;
+            border: 2px solid rgba(124, 58, 237, 0.3);
+            pointer-events: none;
+            z-index: -1;
+            box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="cam-border"></div>
+
+    <div class="top-left-logo">
+        <div class="logo-box">DEETALK</div>
+        <div class="sub-count">1.44M ✔</div>
+    </div>
+
+    <div class="sidebar-table">
+        <div class="table-header">
+            <h2>Fantasy League</h2>
+            <p>Top of the Table</p>
+        </div>
+        <div class="table-rows">
+            <div class="row">
+                <span class="rank">1</span>
+                <span class="team">Team Alpha</span>
+                <span class="pts">48</span>
+            </div>
+            <div class="row">
+                <span class="rank">2</span>
+                <span class="team">Gridiron Kings</span>
+                <span class="pts">42</span>
+            </div>
+            <div class="row">
+                <span class="rank">3</span>
+                <span class="team">Showtime FC</span>
+                <span class="pts">42</span>
+            </div>
+            <div class="row">
+                <span class="rank">4</span>
+                <span class="team">Nittany Lions</span>
+                <span class="pts">34</span>
+            </div>
+            <div class="row">
+                <span class="rank">5</span>
+                <span class="team">Steel City</span>
+                <span class="pts">31</span>
+            </div>
+             <div class="row">
+                <span class="rank">6</span>
+                <span class="team">The Birds</span>
+                <span class="pts">30</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="lower-third-container">
+        
+        <div class="date-box">
+            <span class="date-big">6</span>
+            <span class="date-small">JAN</span>
+            <span class="date-small" style="margin-top:5px; font-size:12px;">19:31 PM</span>
+        </div>
+
+        <div class="main-content-stack">
+            <div class="headline-bar skew-box">
+                <span class="headline-text unskew-text">TITLE GONE?</span>
+            </div>
+            <div class="ticker-bar skew-box">
+                <div class="ticker-label unskew-text">LATEST</div>
+                <div class="ticker-marquee unskew-text">
+                    Welcome to DeeTalk • Breaking News: Star Quarterback Traded • Subscribe for daily updates • Join the discord for fantasy tips •
+                </div>
+            </div>
+        </div>
+
+        <div class="socials-box skew-box">
+            <div class="unskew-text">
+                <div class="social-handle" style="margin-bottom: 5px; color: var(--neon-cyan);">DEETALK TV</div>
+                <div class="social-handle" style="font-size: 14px; opacity: 0.8;">X / IG / YT</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="poll-box">
+        <div class="poll-icon-area">?</div>
+        <div class="poll-content">
+            <span class="poll-text">WHO WILL WIN THE SUPER BOWL?</span>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Spot AI - Full Fill & Context Mode</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700;800&family=Share+Tech+Mono&display=swap');
+
+        body {
+            margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden;
+            background: transparent;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        /* --- BACKGROUND LAYER --- */
+        .bg-layer {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 70%, #050a14 100%);
+            z-index: -1;
+            /* Camera Cutout (X=700, Y=80) */
+            clip-path: polygon(
+                0% 0%, 100% 0%, 100% 100%, 0% 100%, 
+                0% 0%, 
+                700px 80px, 700px 880px, 1870px 880px, 1870px 80px, 700px 80px
+            );
+        }
+
+        /* --- NEWS IMAGE PANEL (FULL FILL) --- */
+        .news-panel {
+            position: absolute; top: 80px; left: 50px; 
+            width: 600px; height: 800px;     
+            border: 3px solid #3B82F6;
+            box-shadow: 0 0 35px rgba(59, 130, 246, 0.4);
+            border-radius: 12px; overflow: hidden; background: #000; z-index: 10;
+        }
+        
+        #news-img { 
+            width: 100%; 
+            height: 100%; 
+            /* THE FIX: Forces image to fill the container completely */
+            object-fit: cover; 
+            /* Focuses slightly above center (better for faces) */
+            object-position: center 20%; 
+            transition: opacity 0.5s; 
+        }
+        
+        .source-tag {
+            position: absolute; top: 0; left: 0; width: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
+            padding: 20px 30px; color: #EF4444; font-weight: 800; font-size: 32px;
+            text-transform: uppercase; text-shadow: 0 2px 5px black;
+        }
+
+        /* --- HOST FRAME --- */
+        .host-frame {
+            position: absolute; top: 80px; left: 700px; 
+            width: 1170px; height: 800px; 
+            border: 3px solid #3B82F6;
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+            border-radius: 12px; pointer-events: none;
+        }
+        
+        .host-tag {
+            position: absolute; bottom: 0; right: 0;
+            background: #3B82F6; color: white; padding: 10px 40px; 
+            font-weight: 800; font-size: 22px; text-transform: uppercase; letter-spacing: 2px;
+            clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%); border-top-left-radius: 10px;
+        }
+
+        /* --- NEW: CONTEXT / CHAT PANEL (Right Side of Camera) --- */
+        .context-panel {
+            position: absolute; 
+            top: 20px; 
+            right: 20px; 
+            width: 400px; /* Wider for reading */
+            background: rgba(15, 23, 42, 0.85); /* Darker for readability */
+            border-left: 4px solid #3B82F6; 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: -5px 5px 20px rgba(0,0,0,0.5);
+            pointer-events: auto; /* Allow interaction if needed */
+        }
+
+        .context-label {
+            color: #EF4444; font-size: 14px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 2px;
+            font-family: 'Share Tech Mono', monospace; margin-bottom: 8px;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .context-label::before {
+            content: ''; width: 8px; height: 8px; background: #EF4444; border-radius: 50%;
+            box-shadow: 0 0 10px #EF4444;
+        }
+
+        .context-text {
+            color: #e2e8f0; font-size: 24px; font-weight: 600; line-height: 1.3;
+            text-shadow: 0 2px 2px rgba(0,0,0,0.8);
+            border-top: 1px solid #334155; padding-top: 10px;
+        }
+        
+        /* --- HEADLINE BAR --- */
+        .headline-bar {
+            position: absolute; bottom: 50px; left: 50px; right: 50px;
+            height: 110px; background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
+            border-left: 12px solid #EF4444; display: flex; flex-direction: column; justify-content: center;
+            padding: 0 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.6); z-index: 20;
+        }
+
+        #headline-text {
+            color: white; font-size: 42px; font-weight: 800; text-transform: uppercase; 
+            line-height: 1.1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+        }
+        
+        .sub-headline {
+            color: #94a3b8; font-size: 20px; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px;
+        }
+
+        .controls { position: absolute; top: 25px; right: 50px; z-index: 100; }
+        button {
+            background: #EF4444; color: white; border: none; padding: 10px 30px;
+            font-family: 'Rajdhani', sans-serif; font-weight: 800; font-size: 20px; cursor: pointer;
+            text-transform: uppercase; border-radius: 4px; box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+        }
+        button:hover { background: #dc2626; }
+
+    </style>
+</head>
+<body>
+
+    <div class="bg-layer"></div>
+    <div class="controls"><button onclick="nextStory()">Next Story >></button></div>
+
+    <div class="news-panel">
+        <div class="source-tag" id="news-source">ESPN</div>
+        <video id="news-video" style="display:none; width:100%; height:100%; object-fit:cover;" controls loop muted></video>
+        <iframe id="tiktok-embed" style="display:none; width:100%; height:100%; border:none;" allowfullscreen></iframe>
+        <img id="news-img" src="" alt="News Image" style="display:block;">
+    </div>
+
+    <div class="host-frame">
+        <div class="context-panel" id="stats-box">
+            <div class="context-label">AI SUMMARY // KEY CONTEXT</div>
+            <div class="context-text" id="stats-text">Loading Data...</div>
+        </div>
+        <div class="host-tag">DeeTalk</div>
+    </div>
+
+    <div class="headline-bar">
+        <div class="sub-headline">TOPIC</div>
+        <div id="headline-text">WAITING FOR UPDATES...</div>
+    </div>
+
+    <script src="headline_data.js"></script>
+    <script>
+        let currentIndex = 0;
+
+        function updateDisplay() {
+            if (typeof headlineData === 'undefined' || headlineData.length === 0) return;
+            const story = headlineData[currentIndex];
+            
+            document.getElementById('headline-text').innerText = story.title;
+            document.getElementById('news-source').innerText = story.source;
+            
+            // CONTEXT LOGIC
+            const statsBox = document.getElementById('stats-text');
+            if (story.summary && story.summary.length > 5) {
+                // Show the full summary now
+                statsBox.innerText = story.summary;
+                document.getElementById('stats-box').style.display = 'block';
+            } else {
+                // Fallback text if no summary
+                statsBox.innerText = "Developing story. Details incoming...";
+                document.getElementById('stats-box').style.display = 'block';
+            }
+            
+            const img = document.getElementById('news-img');
+            const video = document.getElementById('news-video');
+            const tiktok = document.getElementById('tiktok-embed');
+            function hideAllMedia() {
+                video.style.display = 'none';
+                video.src = '';
+                img.style.display = 'none';
+                tiktok.style.display = 'none';
+                tiktok.src = '';
+            }
+            if (story.video) {
+                if (story.video.includes('tiktok.com')) {
+                    // TikTok embed
+                    hideAllMedia();
+                    // Extract TikTok video ID from URL
+                    let match = story.video.match(/tiktok.com\/(?:@[^/]+\/video\/|v\/)([0-9]+)/);
+                    if (match && match[1]) {
+                        tiktok.src = `https://www.tiktok.com/embed/${match[1]}`;
+                        tiktok.style.display = 'block';
+                    } else {
+                        // fallback: just show the link if can't embed
+                        img.style.display = 'block';
+                    }
+                } else {
+                    // Assume it's a direct video file (mp4, etc)
+                    hideAllMedia();
+                    video.src = story.video;
+                    video.style.display = 'block';
+                    video.load();
+                }
+            } else {
+                hideAllMedia();
+                if (story.image && story.image.startsWith('http')) {
+                    img.src = story.image;
+                } else {
+                    img.src = "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=600&h=1000&fit=crop";
+                }
+                img.style.display = 'block';
+            }
+        }
+
+        function nextStory() {
+            if (typeof headlineData === 'undefined') return;
+            currentIndex = (currentIndex + 1) % headlineData.length;
+            updateDisplay();
+        }
+
+        setTimeout(updateDisplay, 500);
+    </script>
+</body>
+</html>

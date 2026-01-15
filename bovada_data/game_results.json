@@ -1,0 +1,290 @@
+[
+  {
+    "id": "401772960",
+    "name": "Baltimore Ravens at Pittsburgh Steelers",
+    "status": "In Progress",
+    "date": "2026-01-05T01:20Z",
+    "teams": [
+      {
+        "name": "Pittsburgh Steelers",
+        "abbrev": "PIT",
+        "score": "13"
+      },
+      {
+        "name": "Baltimore Ravens",
+        "abbrev": "BAL",
+        "score": "17"
+      }
+    ]
+  },
+  {
+    "id": "401772967",
+    "name": "New York Jets at Buffalo Bills",
+    "status": "Final",
+    "date": "2026-01-04T21:25Z",
+    "teams": [
+      {
+        "name": "Buffalo Bills",
+        "abbrev": "BUF",
+        "score": "35"
+      },
+      {
+        "name": "New York Jets",
+        "abbrev": "NYJ",
+        "score": "8"
+      }
+    ]
+  },
+  {
+    "id": "401772965",
+    "name": "Detroit Lions at Chicago Bears",
+    "status": "Final",
+    "date": "2026-01-04T21:25Z",
+    "teams": [
+      {
+        "name": "Chicago Bears",
+        "abbrev": "CHI",
+        "score": "16"
+      },
+      {
+        "name": "Detroit Lions",
+        "abbrev": "DET",
+        "score": "19"
+      }
+    ]
+  },
+  {
+    "id": "401772956",
+    "name": "Los Angeles Chargers at Denver Broncos",
+    "status": "Final",
+    "date": "2026-01-04T21:25Z",
+    "teams": [
+      {
+        "name": "Denver Broncos",
+        "abbrev": "DEN",
+        "score": "19"
+      },
+      {
+        "name": "Los Angeles Chargers",
+        "abbrev": "LAC",
+        "score": "3"
+      }
+    ]
+  },
+  {
+    "id": "401772957",
+    "name": "Kansas City Chiefs at Las Vegas Raiders",
+    "status": "Final",
+    "date": "2026-01-04T21:25Z",
+    "teams": [
+      {
+        "name": "Las Vegas Raiders",
+        "abbrev": "LV",
+        "score": "14"
+      },
+      {
+        "name": "Kansas City Chiefs",
+        "abbrev": "KC",
+        "score": "12"
+      }
+    ]
+  },
+  {
+    "id": "401772955",
+    "name": "Arizona Cardinals at Los Angeles Rams",
+    "status": "Final",
+    "date": "2026-01-04T21:25Z",
+    "teams": [
+      {
+        "name": "Los Angeles Rams",
+        "abbrev": "LAR",
+        "score": "37"
+      },
+      {
+        "name": "Arizona Cardinals",
+        "abbrev": "ARI",
+        "score": "20"
+      }
+    ]
+  },
+  {
+    "id": "401772958",
+    "name": "Miami Dolphins at New England Patriots",
+    "status": "Final",
+    "date": "2026-01-04T21:25Z",
+    "teams": [
+      {
+        "name": "New England Patriots",
+        "abbrev": "NE",
+        "score": "38"
+      },
+      {
+        "name": "Miami Dolphins",
+        "abbrev": "MIA",
+        "score": "10"
+      }
+    ]
+  },
+  {
+    "id": "401772959",
+    "name": "Washington Commanders at Philadelphia Eagles",
+    "status": "Final",
+    "date": "2026-01-04T21:25Z",
+    "teams": [
+      {
+        "name": "Philadelphia Eagles",
+        "abbrev": "PHI",
+        "score": "17"
+      },
+      {
+        "name": "Washington Commanders",
+        "abbrev": "WSH",
+        "score": "24"
+      }
+    ]
+  },
+  {
+    "id": "401772966",
+    "name": "New Orleans Saints at Atlanta Falcons",
+    "status": "Final",
+    "date": "2026-01-04T18:00Z",
+    "teams": [
+      {
+        "name": "Atlanta Falcons",
+        "abbrev": "ATL",
+        "score": "19"
+      },
+      {
+        "name": "New Orleans Saints",
+        "abbrev": "NO",
+        "score": "17"
+      }
+    ]
+  },
+  {
+    "id": "401772964",
+    "name": "Cleveland Browns at Cincinnati Bengals",
+    "status": "Final",
+    "date": "2026-01-04T18:00Z",
+    "teams": [
+      {
+        "name": "Cincinnati Bengals",
+        "abbrev": "CIN",
+        "score": "18"
+      },
+      {
+        "name": "Cleveland Browns",
+        "abbrev": "CLE",
+        "score": "20"
+      }
+    ]
+  },
+  {
+    "id": "401772968",
+    "name": "Green Bay Packers at Minnesota Vikings",
+    "status": "Final",
+    "date": "2026-01-04T18:00Z",
+    "teams": [
+      {
+        "name": "Minnesota Vikings",
+        "abbrev": "MIN",
+        "score": "16"
+      },
+      {
+        "name": "Green Bay Packers",
+        "abbrev": "GB",
+        "score": "3"
+      }
+    ]
+  },
+  {
+    "id": "401772963",
+    "name": "Dallas Cowboys at New York Giants",
+    "status": "Final",
+    "date": "2026-01-04T18:00Z",
+    "teams": [
+      {
+        "name": "New York Giants",
+        "abbrev": "NYG",
+        "score": "34"
+      },
+      {
+        "name": "Dallas Cowboys",
+        "abbrev": "DAL",
+        "score": "17"
+      }
+    ]
+  },
+  {
+    "id": "401772970",
+    "name": "Tennessee Titans at Jacksonville Jaguars",
+    "status": "Final",
+    "date": "2026-01-04T18:00Z",
+    "teams": [
+      {
+        "name": "Jacksonville Jaguars",
+        "abbrev": "JAX",
+        "score": "41"
+      },
+      {
+        "name": "Tennessee Titans",
+        "abbrev": "TEN",
+        "score": "7"
+      }
+    ]
+  },
+  {
+    "id": "401772962",
+    "name": "Indianapolis Colts at Houston Texans",
+    "status": "Final",
+    "date": "2026-01-04T18:00Z",
+    "teams": [
+      {
+        "name": "Houston Texans",
+        "abbrev": "HOU",
+        "score": "38"
+      },
+      {
+        "name": "Indianapolis Colts",
+        "abbrev": "IND",
+        "score": "30"
+      }
+    ]
+  },
+  {
+    "id": "401772961",
+    "name": "Seattle Seahawks at San Francisco 49ers",
+    "status": "Final",
+    "date": "2026-01-04T01:00Z",
+    "teams": [
+      {
+        "name": "San Francisco 49ers",
+        "abbrev": "SF",
+        "score": "3"
+      },
+      {
+        "name": "Seattle Seahawks",
+        "abbrev": "SEA",
+        "score": "13"
+      }
+    ]
+  },
+  {
+    "id": "401772969",
+    "name": "Carolina Panthers at Tampa Bay Buccaneers",
+    "status": "Final",
+    "date": "2026-01-03T21:30Z",
+    "teams": [
+      {
+        "name": "Tampa Bay Buccaneers",
+        "abbrev": "TB",
+        "score": "16"
+      },
+      {
+        "name": "Carolina Panthers",
+        "abbrev": "CAR",
+        "score": "14"
+      }
+    ]
+  }
+]

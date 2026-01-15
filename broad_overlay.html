@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Spot AI - Center HUD</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700;800&display=swap');
+
+        :root {
+            --neon-blue: #3B82F6;
+            --neon-red: #EF4444;
+            --dark-bg: #0f172a;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 1920px;
+            height: 1080px;
+            overflow: hidden;
+            background: transparent; /* KEY: Sides are transparent to show website */
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        /* --- 1. THE CENTRAL BLOCKER (Hides the Schedule) --- */
+        .center-blocker {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1100px; /* Adjust this if you need to show more/less of the sides */
+            height: 1080px;
+            /* Cool dark gradient to cover the middle of the website */
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 80%, #020617 100%);
+            
+            /* THIS CLIP PATH CUTS THE HOLE FOR YOUR CAMERA */
+            /* It draws a box around the whole screen, then a smaller box in the middle */
+            -webkit-clip-path: polygon(
+                0% 0%, 100% 0%, 100% 100%, 0% 100%, /* Outer Box */
+                0% 0%, /* Close Loop */
+                225px 180px, 225px 780px, 875px 780px, 875px 180px, 225px 180px /* Inner Hole (650x600) */
+            );
+            clip-path: polygon(
+                0% 0%, 100% 0%, 100% 100%, 0% 100%,
+                0% 0%,
+                225px 180px, 225px 780px, 875px 780px, 875px 180px, 225px 180px 
+            );
+            z-index: 1; 
+        }
+
+        /* --- 2. THE GLOWING CAMERA FRAME --- */
+        .camera-frame {
+            position: absolute;
+            top: 180px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 650px;
+            height: 600px;
+            z-index: 10;
+            border: 3px solid var(--neon-blue);
+            box-shadow: 0 0 25px var(--neon-blue), inset 0 0 15px rgba(59, 130, 246, 0.3);
+            pointer-events: none;
+        }
+        
+        /* Corner Accents */
+        .camera-frame::after {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background-image: 
+                linear-gradient(to right, var(--neon-blue) 4px, transparent 4px),
+                linear-gradient(to bottom, var(--neon-blue) 4px, transparent 4px),
+                linear-gradient(to left, var(--neon-blue) 4px, transparent 4px),
+                linear-gradient(to top, var(--neon-blue) 4px, transparent 4px);
+            background-position: 0 0, 0 0, 100% 100%, 100% 100%;
+            background-size: 25px 25px; background-repeat: no-repeat;
+        }
+
+        .host-tag {
+            position: absolute; top: -18px; left: 50%; transform: translateX(-50%);
+            background: var(--neon-blue); color: white; padding: 2px 20px;
+            font-weight: 800; text-transform: uppercase; letter-spacing: 2px;
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        }
+
+        /* --- 3. TOP BRANDING --- */
+        .header-container {
+            position: absolute; top: 40px; left: 0; width: 100%;
+            display: flex; justify-content: center; align-items: center; gap: 20px;
+            z-index: 20;
+        }
+        .top-logo { font-size: 38px; font-weight: 800; color: white; text-transform: uppercase; letter-spacing: 3px; text-shadow: 0 0 20px var(--neon-blue); }
+
+        /* --- 4. BOTTOM TICKER --- */
+        .ticker-container {
+            position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+            width: 1100px; height: 60px;
+            background: rgba(15, 23, 42, 0.95);
+            border-bottom: 3px solid var(--neon-red);
+            border-top: 1px solid #334155;
+            z-index: 20; display: flex; align-items: center;
+        }
+        
+        .ticker-label {
+            background: var(--neon-red); height: 100%; color: white;
+            display: flex; align-items: center; padding: 0 25px;
+            font-weight: 800; text-transform: uppercase; font-style: italic;
+        }
+        
+        .ticker-wrap { flex-grow: 1; overflow: hidden; white-space: nowrap; height: 100%; display: flex; align-items: center; }
+        .ticker-move { display: flex; animation: ticker 60s linear infinite; }
+        .ticker-item { padding: 0 2rem; font-size: 20px; color: #cbd5e1; font-weight: 500; display: flex; align-items: center;}
+        
+        @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+    </style>
+</head>
+<body>
+
+    <div class="center-blocker"></div>
+
+    <div class="camera-frame">
+        <div class="host-tag">DeeTalk</div>
+    </div>
+
+    <div class="header-container">
+        <div class="top-logo"><span style="color:var(--neon-blue)">THE SPOT</span> AI</div>
+    </div>
+
+    <div class="ticker-container">
+        <div class="ticker-label">Topic</div>
+        <div class="ticker-wrap">
+            <div class="ticker-move" id="ticker-content">
+                <div class="ticker-item">Loading Live Data...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ticker_data.js"></script>
+    <script>
+        function renderTicker() {
+            if (typeof tickerData === 'undefined') return;
+            const container = document.getElementById('ticker-content');
+            let htmlContent = '';
+            
+            tickerData.forEach(item => {
+                let color = item.type === 'GAME' ? '#3B82F6' : '#EF4444';
+                htmlContent += `
+                    <div class="ticker-item">
+                        <span style="color:${color}; font-weight:700; margin-right:8px;">${item.text}</span> 
+                        ${item.detail}
+                    </div>`;
+            });
+            container.innerHTML = htmlContent + htmlContent + htmlContent; // Loop buffer
+        }
+        setInterval(renderTicker, 2000); // Check for updates
+        renderTicker();
+    </script>
+</body>
+</html>
