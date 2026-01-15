@@ -10,6 +10,7 @@ __pycache__/
 .Python
 env/
 venv/
+.venv/
 ENV/
 env.bak/
 venv.bak/
@@ -76,3 +77,10 @@ news_data/
 Host-image/
 Topic-image/
 .env
+
+# Large media files
+*.mp4
+*.wav
+*.mp3
+*.avi
+*.mov
