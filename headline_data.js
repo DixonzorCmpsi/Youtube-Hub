@@ -1,52 +1,194 @@
 const headlineData = [
     {
-        "source": "DeeTalk: We Have To Learn",
-        "title": "Great Coaching Beats Talent When Talent Is Equal",
-        "image": "https://dupvhm5r1oaxt.cloudfront.net/uploads/2025/09/ben-johnson-bears-vikings.jpg",
-        "summary": "Ben Johnson's Bears overcame a 21-3 halftime deficit to beat the Packers 31-27 in the Wild Card round. ",
-        "summary_long": "For three decades, Green Bay beat Chicago with infrastructure, not just talent. From 1992-2023, the Packers had 3 offensive-minded Head Coaches define their eras. Chicago churned through 11 coaches, mostly defensive minds who left rookie QBs stranded in chaos. Yesterday proved that when the infrastructure is equal, the 'Packers Mystique' evaporates.",
-    },
-       {
-        "source": "DeeTalk: We Have To Learn",
-        "title": "Great Coaching Beats Talent When Talent Is Equal",
-        "image": "https://cdn.profootballrumors.com/files/2026/01/USATSI_27890675-scaled.jpg",
-        "summary": "Ben Johnson Is Him",
-        "summary_long": "For three decades, Green Bay beat Chicago with infrastructure, not just talent. From 1992-2023, the Packers had 3 offensive-minded Head Coaches define their eras. Chicago churned through 11 coaches, mostly defensive minds who left rookie QBs stranded in chaos. Yesterday proved that when the infrastructure is equal, the 'Packers Mystique' evaporates.",
-        "video": "https://www.tiktok.com/@dodgerfan90033/video/7594064576635800863?is_from_webapp=1&sender_device=pc"
+        "source": "DeeTalk: @RookieFirstTeam",
+        "title": "The 2025 Roookie first team",
+        "image": "https://www.washjeff.edu/wp-content/uploads/1024px-Roger_Goodell_cropped.jpg",
+        "tiktok": "",
+        "summary": "Write your pick in the comments!",
+        "summary_long": "If you were to take the combined total weight of every offensive player in the Pro Football Hall of Fame, it would be an ABSOLUTELY MASSIVE number, stretching into the hundreds of thousands of pounds. But what if I told you that a single, specific group of eleven humans—all under the age of 23—is currently on a trajectory to render that entire history a COMPLETELY STATISTICAL ANOMALY? When we look at this map of the United States, we see the traditional powerhouses of football. But if we look closer at these eleven specific coordinates—from the ACC to the Big Ten—we see a pattern that is MATHEMATICALLY IMPOSSIBLE for most decades to reproduce. Why is it that the oldest prospect in the class, a man with three season-ending injuries, is suddenly the most efficient signal-caller in the league? Why are scouts overlooking 1,000-yard producers for a 'safe' slot receiver from Ohio State? How can a human being with the frame of a power forward move with the lateral velocity of a professional sprinter? If we zoom in right here, on the offensive line tape, we see a VERY different story than the one the media is telling you. We aren't just looking at 'good players.' We are looking at a tectonic shift in the very geometry of the gridiron. To understand why, we first have to look at..."
     },
     {
-        "source": "DeeTalk: The History",
-        "title": "I. THE STABILITY GAP",
-        "image": "https://cdn.profootballrumors.com/files/2026/01/USATSI_27890675-scaled.jpg",
-        "summary": "For three decades, Green Bay beat Chicago with infrastructure, not just talent. From 1992-2023, the Packers had 3 offensive-minded Head Coaches define their eras. Chicago churned through 11 coaches, mostly defensive minds who left rookie QBs stranded in chaos. Yesterday proved that when the infrastructure is equal, the 'Packers Mystique' evaporates.",
-        "summary_long": "For three decades, Green Bay beat Chicago with infrastructure, not just talent. From 1992-2023, the Packers had 3 offensive-minded Head Coaches define their eras. Chicago churned through 11 coaches, mostly defensive minds who left rookie QBs stranded in chaos. Yesterday proved that when the infrastructure is equal, the 'Packers Mystique' evaporates."
+        "source": "DeeTalk: QB1",
+        "title": "The 2025 Roookie first team",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/046/030/781/small_2x/handwritten-question-mark-on-a-black-background-asking-questions-about-something-free-video.jpg",
+        "tiktok": "",
+        "summary": "Write your pick in the comments!",
+        "summary_long": "If you were to take the combined total weight of every offensive player in the Pro Football Hall of Fame, it would be an ABSOLUTELY MASSIVE number, stretching into the hundreds of thousands of pounds. But what if I told you that a single, specific group of eleven humans—all under the age of 23—is currently on a trajectory to render that entire history a COMPLETELY STATISTICAL ANOMALY? When we look at this map of the United States, we see the traditional powerhouses of football. But if we look closer at these eleven specific coordinates—from the ACC to the Big Ten—we see a pattern that is MATHEMATICALLY IMPOSSIBLE for most decades to reproduce. Why is it that the oldest prospect in the class, a man with three season-ending injuries, is suddenly the most efficient signal-caller in the league? Why are scouts overlooking 1,000-yard producers for a 'safe' slot receiver from Ohio State? How can a human being with the frame of a power forward move with the lateral velocity of a professional sprinter? If we zoom in right here, on the offensive line tape, we see a VERY different story than the one the media is telling you. We aren't just looking at 'good players.' We are looking at a tectonic shift in the very geometry of the gridiron. To understand why, we first have to look at..."
     },
     {
-        "source": "DeeTalk: The Fix",
-        "title": "II. THE BEN JOHNSON EFFECT",
-        "image": "https://i.dailymail.co.uk/1s/2025/11/28/23/104284143-15336479-Chicago_Bears_coach_Ben_Johnson_whipped_off_his_shirt_after_beat-m-57_1764374098488.jpg",
-        "summary": "In the Wild Card win, Caleb Williams threw for 361 yards—a franchise playoff record. But look closer: 55% of those yards came on 'schemed open' throws where receivers had 3+ yards of separation. Ben Johnson turned a 21-3 halftime deficit into a 31-27 win not by asking Caleb to be Superman, but by exploiting Green Bay's safeties with motion and spacing. That is the difference between a 'Talented QB' and a 'Coached QB'.",
-        "summary_long": "In the Wild Card win, Caleb Williams threw for 361 yards—a franchise playoff record. But look closer: 55% of those yards came on 'schemed open' throws where receivers had 3+ yards of separation. Ben Johnson turned a 21-3 halftime deficit into a 31-27 win not by asking Caleb to be Superman, but by exploiting Green Bay's safeties with motion and spacing. That is the difference between a 'Talented QB' and a 'Coached QB'."
+        "source": "DeeTalk: QB1",
+        "title": "QB1: Tyler Shough, The Veteran Architect",
+        "image": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/3859/files/2025/08/tyler-shough.jpg",
+        "tiktok": "",
+        "summary": "Tyler Shough secures QB1 not through flash, but through a league-leading 'Big Time Throw' rate of 6.8% among rookies. While Sanders and Ward struggled with NFL zone complexities, Shough's veteran processing allowed him to maintain a 4:1 TD-to-INT ratio specifically on 3rd downs. He finished the season with a +4.5 CPOE (Completion Percentage Over Expected), proving that his 'injury history' was irrelevant compared to his ability to dissect pro defenses from the pocket.",
+        "summary_long": "Tyler Shough secures QB1 not through flash, but through a league-leading 'Big Time Throw' rate of 6.8% among rookies. While Sanders and Ward struggled with NFL zone complexities, Shough's veteran processing allowed him to maintain a 4:1 TD-to-INT ratio specifically on 3rd downs. He finished the season with a +4.5 CPOE (Completion Percentage Over Expected), proving that his 'injury history' was irrelevant compared to his ability to dissect pro defenses from the pocket."
+    },
+        {
+        "source": "DeeTalk: RB1",
+        "title": "The 2025 Roookie first team",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/046/030/781/small_2x/handwritten-question-mark-on-a-black-background-asking-questions-about-something-free-video.jpg",
+        "tiktok": "",
+        "summary": "Write your pick in the comments!",
+        "summary_long": "If you were to take the combined total weight of every offensive player in the Pro Football Hall of Fame, it would be an ABSOLUTELY MASSIVE number, stretching into the hundreds of thousands of pounds. But what if I told you that a single, specific group of eleven humans—all under the age of 23—is currently on a trajectory to render that entire history a COMPLETELY STATISTICAL ANOMALY? When we look at this map of the United States, we see the traditional powerhouses of football. But if we look closer at these eleven specific coordinates—from the ACC to the Big Ten—we see a pattern that is MATHEMATICALLY IMPOSSIBLE for most decades to reproduce. Why is it that the oldest prospect in the class, a man with three season-ending injuries, is suddenly the most efficient signal-caller in the league? Why are scouts overlooking 1,000-yard producers for a 'safe' slot receiver from Ohio State? How can a human being with the frame of a power forward move with the lateral velocity of a professional sprinter? If we zoom in right here, on the offensive line tape, we see a VERY different story than the one the media is telling you. We aren't just looking at 'good players.' We are looking at a tectonic shift in the very geometry of the gridiron. To understand why, we first have to look at..."
     },
     {
-        "source": "DeeTalk: The Regression",
-        "title": "III. OUT-SCHEMED IN GREEN BAY",
-        "image": "https://cdn.profootballrumors.com/files/2023/11/USATSI_21827010-scaled.jpg",
-        "summary": "Jordan Love threw 4 touchdowns, but when the game tightened, his safety valve vanished. In the final 4 minutes, facing Johnson's simulated pressures, Love went 1-for-4 with a game-sealing incompletion. The Packers scored 27 points, but managed zero points in the final 10 minutes when adjustments mattered most. Matt LaFleur had no counter-punch to Johnson's 4th quarter aggressive play-calling.",
-        "summary_long": "Jordan Love threw 4 touchdowns, but when the game tightened, his safety valve vanished. In the final 4 minutes, facing Johnson's simulated pressures, Love went 1-for-4 with a game-sealing incompletion. The Packers scored 27 points, but managed zero points in the final 10 minutes when adjustments mattered most. Matt LaFleur had no counter-punch to Johnson's 4th quarter aggressive play-calling."
+        "source": "DeeTalk: RB1",
+        "title": "RB1: Ashton Jeanty, The Yardage Architect",
+        "image": "https://external-preview.redd.it/the-jacksonville-jaguars-believe-rb-ashton-jeanty-is-the-v0-V7TDDmdg8xr0TEKb7T8a2rXzbw3wuVoVQ0t-PvNBY3I.jpg?width=640&crop=smart&auto=webp&s=b91867831cf2be2d088965b33a32692e89cccfec",
+        "tiktok": "",
+        "summary": "Ashton Jeanty didn't just win RB1; he broke the model. He averaged 4.2 yards *after* contact per attempt in his rookie season—a figure that topped 90% of veteran starters. While Omarion Hampton provided bulk, Jeanty led the league in 'Missed Tackles Forced' (78), turning what should have been 2-yard losses into explosive plays. His 1,600+ scrimmage yards were built on pure contact balance, not just open lanes.",
+        "summary_long": "Ashton Jeanty didn't just win RB1; he broke the model. He averaged 4.2 yards *after* contact per attempt in his rookie season—a figure that topped 90% of veteran starters. While Omarion Hampton provided bulk, Jeanty led the league in 'Missed Tackles Forced' (78), turning what should have been 2-yard losses into explosive plays. His 1,600+ scrimmage yards were built on pure contact balance, not just open lanes."
     },
     {
-        "source": "DeeTalk: Modern NFL",
-        "title": "IV. SCHEME RAISES THE FLOOR",
-        "image": "https://s.yimg.com/ny/api/res/1.2/BVWFTLLVAel2x0c4ybn4EQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNztjZj13ZWJw/https://s.yimg.com/os/creatr-uploaded-images/2024-08/31112130-6e2b-11ef-97a9-c12f96d6d62f",
-        "summary": "The Bears are the first team in NFL history to win a playoff game after trailing by 18+ points without forcing a turnover. That is purely a coaching stat. It means you generated offense efficiently on every single drive when you had zero margin for error. Ben Johnson took an offense that ranked 25th in DVOA two years ago and just hung 31 points on a top-tier defense in January.",
-        "summary_long": "The Bears are the first team in NFL history to win a playoff game after trailing by 18+ points without forcing a turnover. That is purely a coaching stat. It means you generated offense efficiently on every single drive when you had zero margin for error. Ben Johnson took an offense that ranked 25th in DVOA two years ago and just hung 31 points on a top-tier defense in January."
+        "source": "DeeTalk: WHO IS OUR LT",
+        "title": "The 2025 Roookie first team",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/046/030/781/small_2x/handwritten-question-mark-on-a-black-background-asking-questions-about-something-free-video.jpg",
+        "tiktok": "",
+        "summary": "Write your pick in the comments!",
+        "summary_long": "If you were to take the combined total weight of every offensive player in the Pro Football Hall of Fame, it would be an ABSOLUTELY MASSIVE number, stretching into the hundreds of thousands of pounds. But what if I told you that a single, specific group of eleven humans—all under the age of 23—is currently on a trajectory to render that entire history a COMPLETELY STATISTICAL ANOMALY? When we look at this map of the United States, we see the traditional powerhouses of football. But if we look closer at these eleven specific coordinates—from the ACC to the Big Ten—we see a pattern that is MATHEMATICALLY IMPOSSIBLE for most decades to reproduce. Why is it that the oldest prospect in the class, a man with three season-ending injuries, is suddenly the most efficient signal-caller in the league? Why are scouts overlooking 1,000-yard producers for a 'safe' slot receiver from Ohio State? How can a human being with the frame of a power forward move with the lateral velocity of a professional sprinter? If we zoom in right here, on the offensive line tape, we see a VERY different story than the one the media is telling you. We aren't just looking at 'good players.' We are looking at a tectonic shift in the very geometry of the gridiron. To understand why, we first have to look at..."
     },
     {
-        "source": "DeeTalk: Verdict",
-        "title": "V. THE HEADSET > THE HELMET",
-        "image": "https://cst.brightspotcdn.com/dims4/default/57466e2/2147483647/strip/true/crop/6059x4039+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fchorus-production-cst-web.s3.us-east-1.amazonaws.com%2Fbrightspot%2F96%2F05%2F612582104ad88db31e528b29bc1c%2Fjohnson-ben-21.jpg",
-        "summary": "The 25-yard game-winning touchdown to DJ Moore wasn't a scramble drill; it was a designed dagger. The Bears finally realized that you don't beat Green Bay by finding the next Aaron Rodgers; you beat them by hiring the guy who can out-smart him. Yesterday, Ben Johnson earned every cent of his contract.",
-        "summary_long": "The 25-yard game-winning touchdown to DJ Moore wasn't a scramble drill; it was a designed dagger. The Bears finally realized that you don't beat Green Bay by finding the next Aaron Rodgers; you beat them by hiring the guy who can out-smart him. Yesterday, Ben Johnson earned every cent of his contract."
+        "source": "DeeTalk: LT",
+        "title": "LT: Will Campbell, The Blindside Lockdown",
+        "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_413,w_4000,h_4000/c_fill,w_720,ar_1:1,f_auto,q_auto,g_auto/images/ImagnImages/mmsport/si/01kezpvnqa2xpnbgr0dp.jpg",
+        "tiktok": "",
+        "summary": "Will Campbell erased the competition for Left Tackle by allowing zero sacks in his first 400 pro pass-blocking snaps. He faced a gauntlet of premier edge rushers and finished with a 98.2 Pass Blocking Efficiency grade. While Josh Simmons flashed athleticism, Campbell's technique was robotic; he was the only rookie tackle to not commit a holding penalty in the first 10 weeks of the season.",
+        "summary_long": "Will Campbell erased the competition for Left Tackle by allowing zero sacks in his first 400 pro pass-blocking snaps. He faced a gauntlet of premier edge rushers and finished with a 98.2 Pass Blocking Efficiency grade. While Josh Simmons flashed athleticism, Campbell's technique was robotic; he was the only rookie tackle to not commit a holding penalty in the first 10 weeks of the season."
+    },
+        {
+        "source": "DeeTalk: WHO IS OUR RT",
+        "title": "The 2025 Roookie first team",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/046/030/781/small_2x/handwritten-question-mark-on-a-black-background-asking-questions-about-something-free-video.jpg",
+        "tiktok": "",
+        "summary": "Write your pick in the comments!",
+        "summary_long": "If you were to take the combined total weight of every offensive player in the Pro Football Hall of Fame, it would be an ABSOLUTELY MASSIVE number, stretching into the hundreds of thousands of pounds. But what if I told you that a single, specific group of eleven humans—all under the age of 23—is currently on a trajectory to render that entire history a COMPLETELY STATISTICAL ANOMALY? When we look at this map of the United States, we see the traditional powerhouses of football. But if we look closer at these eleven specific coordinates—from the ACC to the Big Ten—we see a pattern that is MATHEMATICALLY IMPOSSIBLE for most decades to reproduce. Why is it that the oldest prospect in the class, a man with three season-ending injuries, is suddenly the most efficient signal-caller in the league? Why are scouts overlooking 1,000-yard producers for a 'safe' slot receiver from Ohio State? How can a human being with the frame of a power forward move with the lateral velocity of a professional sprinter? If we zoom in right here, on the offensive line tape, we see a VERY different story than the one the media is telling you. We aren't just looking at 'good players.' We are looking at a tectonic shift in the very geometry of the gridiron. To understand why, we first have to look at..."
+    },
+    {
+        "source": "DeeTalk: RT",
+        "title": "RT: Kelvin Banks Jr., The Perimeter Anchor",
+        "image": "https://media-cdn.socastsrm.com/wordpress/wp-content/blogs.dir/3859/files/2025/08/kelvin-banks-jr-1.jpg",
+        "tiktok": "",
+        "summary": "Kelvin Banks Jr. takes Right Tackle, having allowed the lowest pressure rate (2.1%) of any rookie tackle on true pass sets. He proved to be a 'displacement anomaly' in the run game, clearing an average of 3.5 yards of depth on combo blocks. While Armand Membou offered power, Banks' lateral quickness allowed him to neutralize speed rushers without help, effectively leaving the tight end free to run routes.",
+        "summary_long": "Kelvin Banks Jr. takes Right Tackle, having allowed the lowest pressure rate (2.1%) of any rookie tackle on true pass sets. He proved to be a 'displacement anomaly' in the run game, clearing an average of 3.5 yards of depth on combo blocks. While Armand Membou offered power, Banks' lateral quickness allowed him to neutralize speed rushers without help, effectively leaving the tight end free to run routes."
+    },
+        {
+        "source": "DeeTalk: TE1",
+        "title": "The 2025 Roookie first team",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/046/030/781/small_2x/handwritten-question-mark-on-a-black-background-asking-questions-about-something-free-video.jpg",
+        "tiktok": "",
+        "summary": "Write your pick in the comments!",
+        "summary_long": "If you were to take the combined total weight of every offensive player in the Pro Football Hall of Fame, it would be an ABSOLUTELY MASSIVE number, stretching into the hundreds of thousands of pounds. But what if I told you that a single, specific group of eleven humans—all under the age of 23—is currently on a trajectory to render that entire history a COMPLETELY STATISTICAL ANOMALY? When we look at this map of the United States, we see the traditional powerhouses of football. But if we look closer at these eleven specific coordinates—from the ACC to the Big Ten—we see a pattern that is MATHEMATICALLY IMPOSSIBLE for most decades to reproduce. Why is it that the oldest prospect in the class, a man with three season-ending injuries, is suddenly the most efficient signal-caller in the league? Why are scouts overlooking 1,000-yard producers for a 'safe' slot receiver from Ohio State? How can a human being with the frame of a power forward move with the lateral velocity of a professional sprinter? If we zoom in right here, on the offensive line tape, we see a VERY different story than the one the media is telling you. We aren't just looking at 'good players.' We are looking at a tectonic shift in the very geometry of the gridiron. To understand why, we first have to look at..."
+    },
+    {
+        "source": "DeeTalk: TE",
+        "title": "TE1: Colston Loveland, The Mismatch Prototype",
+        "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4000,h_2250/c_fill,w_1440,ar_1440:810,f_auto,q_auto,g_auto/images/ImagnImages/mmsport/bear_digest/01k2sv90vgt1a1g1qrx6.jpg",
+        "tiktok": "",
+        "summary": "Colston Loveland wins TE1 because he essentially played as a big-slot receiver, running 65% of his routes detached from the line. He generated 2.4 Yards Per Route Run (YPRR), a metric usually reserved for elite WRs. While Tyler Warren offered more inline blocking utility, Loveland's ability to beat linebackers in isolation resulted in 9 touchdowns and a 120.4 passer rating when targeted up the seam.",
+        "summary_long": "Colston Loveland wins TE1 because he essentially played as a big-slot receiver, running 65% of his routes detached from the line. He generated 2.4 Yards Per Route Run (YPRR), a metric usually reserved for elite WRs. While Tyler Warren offered more inline blocking utility, Loveland's ability to beat linebackers in isolation resulted in 9 touchdowns and a 120.4 passer rating when targeted up the seam."
+    },
+    {
+        "source": "DeeTalk: LG1",
+        "title": "The 2025 Roookie first team",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/046/030/781/small_2x/handwritten-question-mark-on-a-black-background-asking-questions-about-something-free-video.jpg",
+        "tiktok": "",
+        "summary": "Write your pick in the comments!",
+        "summary_long": "If you were to take the combined total weight of every offensive player in the Pro Football Hall of Fame, it would be an ABSOLUTELY MASSIVE number, stretching into the hundreds of thousands of pounds. But what if I told you that a single, specific group of eleven humans—all under the age of 23—is currently on a trajectory to render that entire history a COMPLETELY STATISTICAL ANOMALY? When we look at this map of the United States, we see the traditional powerhouses of football. But if we look closer at these eleven specific coordinates—from the ACC to the Big Ten—we see a pattern that is MATHEMATICALLY IMPOSSIBLE for most decades to reproduce. Why is it that the oldest prospect in the class, a man with three season-ending injuries, is suddenly the most efficient signal-caller in the league? Why are scouts overlooking 1,000-yard producers for a 'safe' slot receiver from Ohio State? How can a human being with the frame of a power forward move with the lateral velocity of a professional sprinter? If we zoom in right here, on the offensive line tape, we see a VERY different story than the one the media is telling you. We aren't just looking at 'good players.' We are looking at a tectonic shift in the very geometry of the gridiron. To understand why, we first have to look at..."
+    },
+    {
+        "source": "DeeTalk: LG",
+        "title": "LG: Tyler Booker, The Interior Wall",
+        "image": "https://s.yimg.com/ny/api/res/1.2/vY0.a3SZzEwCY9hZd883gA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNztjZj13ZWJw/https://media.zenfs.com/en/palm_beach_post_natl_articles_437/8706cbca8cea43d32ec31fc4d60de88e",
+        "tiktok": "",
+        "summary": "Tyler Booker wins Left Guard by simply not moving backward. He ranked 1st among rookies in 'Anchor Win Rate' vs bull rushes. Facing 300lb+ interior linemen, Booker allowed only 4 total pressures all season. His presence solidified the pocket depth, allowing Shough to step up consistently. Unlike Wyatt Milum, who relied on movement, Booker won with pure static strength, becoming an immovable object at the point of attack.",
+        "summary_long": "Tyler Booker wins Left Guard by simply not moving backward. He ranked 1st among rookies in 'Anchor Win Rate' vs bull rushes. Facing 300lb+ interior linemen, Booker allowed only 4 total pressures all season. His presence solidified the pocket depth, allowing Shough to step up consistently. Unlike Wyatt Milum, who relied on movement, Booker won with pure static strength, becoming an immovable object at the point of attack."
+    },
+    {
+        "source": "DeeTalk: RG1",
+        "title": "The 2025 Roookie first team",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/046/030/781/small_2x/handwritten-question-mark-on-a-black-background-asking-questions-about-something-free-video.jpg",
+        "tiktok": "",
+        "summary": "Write your pick in the comments!",
+        "summary_long": "If you were to take the combined total weight of every offensive player in the Pro Football Hall of Fame, it would be an ABSOLUTELY MASSIVE number, stretching into the hundreds of thousands of pounds. But what if I told you that a single, specific group of eleven humans—all under the age of 23—is currently on a trajectory to render that entire history a COMPLETELY STATISTICAL ANOMALY? When we look at this map of the United States, we see the traditional powerhouses of football. But if we look closer at these eleven specific coordinates—from the ACC to the Big Ten—we see a pattern that is MATHEMATICALLY IMPOSSIBLE for most decades to reproduce. Why is it that the oldest prospect in the class, a man with three season-ending injuries, is suddenly the most efficient signal-caller in the league? Why are scouts overlooking 1,000-yard producers for a 'safe' slot receiver from Ohio State? How can a human being with the frame of a power forward move with the lateral velocity of a professional sprinter? If we zoom in right here, on the offensive line tape, we see a VERY different story than the one the media is telling you. We aren't just looking at 'good players.' We are looking at a tectonic shift in the very geometry of the gridiron. To understand why, we first have to look at..."
+    },
+    {
+        "source": "DeeTalk: RG",
+        "title": "RG: Donovan Jackson, The Powerhouse Pivot",
+        "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_52,w_3673,h_2066/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/ImagnImages/mmsport/inside_the_vikings/01k1dzyszx0tsjm4ywxx.jpg",
+        "tiktok": "",
+        "summary": "Donovan Jackson secures Right Guard thanks to his elite run-blocking grade (88.4). He was the key to the 'Duo' run scheme, consistently winning his double teams. While Jonah Savaiinaea was a better puller, Jackson's ability to generate vertical movement on 3rd-and-1 situations converted 92% of short-yardage tries. He played every single offensive snap of the rookie season, serving as the unit's iron man.",
+        "summary_long": "Donovan Jackson secures Right Guard thanks to his elite run-blocking grade (88.4). He was the key to the 'Duo' run scheme, consistently winning his double teams. While Jonah Savaiinaea was a better puller, Jackson's ability to generate vertical movement on 3rd-and-1 situations converted 92% of short-yardage tries. He played every single offensive snap of the rookie season, serving as the unit's iron man."
+    },
+    {
+        "source": "DeeTalk: CENTER1",
+        "title": "The 2025 Roookie first team",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/046/030/781/small_2x/handwritten-question-mark-on-a-black-background-asking-questions-about-something-free-video.jpg",
+        "tiktok": "",
+        "summary": "Write your pick in the comments!",
+        "summary_long": "If you were to take the combined total weight of every offensive player in the Pro Football Hall of Fame, it would be an ABSOLUTELY MASSIVE number, stretching into the hundreds of thousands of pounds. But what if I told you that a single, specific group of eleven humans—all under the age of 23—is currently on a trajectory to render that entire history a COMPLETELY STATISTICAL ANOMALY? When we look at this map of the United States, we see the traditional powerhouses of football. But if we look closer at these eleven specific coordinates—from the ACC to the Big Ten—we see a pattern that is MATHEMATICALLY IMPOSSIBLE for most decades to reproduce. Why is it that the oldest prospect in the class, a man with three season-ending injuries, is suddenly the most efficient signal-caller in the league? Why are scouts overlooking 1,000-yard producers for a 'safe' slot receiver from Ohio State? How can a human being with the frame of a power forward move with the lateral velocity of a professional sprinter? If we zoom in right here, on the offensive line tape, we see a VERY different story than the one the media is telling you. We aren't just looking at 'good players.' We are looking at a tectonic shift in the very geometry of the gridiron. To understand why, we first have to look at..."
+    },
+    {
+        "source": "DeeTalk: Center",
+        "title": "C: Jared Wilson, The Length Master (pause)",
+        "image": "https://patriotswire.usatoday.com/gcdn/authoring/authoring-images/2025/07/31/SPAT/85463639007-usatsi-26446068.jpg?crop=4665,2625,x0,y155&width=3200&height=1801&format=pjpg&auto=webp",
+        "tiktok": "",
+        "summary": "Jared Wilson is the Center because of his range. He had the highest 'Reach Block Success Rate' (91%) in the class, utilizing his sub-4.9 speed to cut off nose tackles. While Seth McLaughlin offered experience, Wilson's ability to pull and lead block on perimeter screens added a dimension to the offense that no other center could replicate. He allowed zero hits on the quarterback in 17 games.",
+        "summary_long": "Jared Wilson is the Center because of his range. He had the highest 'Reach Block Success Rate' (91%) in the class, utilizing his sub-4.9 speed to cut off nose tackles. While Seth McLaughlin offered experience, Wilson's ability to pull and lead block on perimeter screens added a dimension to the offense that no other center could replicate. He allowed zero hits on the quarterback in 17 games."
+    },
+      {
+        "source": "DeeTalk: WR-X1",
+        "title": "The 2025 Roookie first team",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/046/030/781/small_2x/handwritten-question-mark-on-a-black-background-asking-questions-about-something-free-video.jpg",
+        "tiktok": "",
+        "summary": "Write your pick in the comments!",
+        "summary_long": "If you were to take the combined total weight of every offensive player in the Pro Football Hall of Fame, it would be an ABSOLUTELY MASSIVE number, stretching into the hundreds of thousands of pounds. But what if I told you that a single, specific group of eleven humans—all under the age of 23—is currently on a trajectory to render that entire history a COMPLETELY STATISTICAL ANOMALY? When we look at this map of the United States, we see the traditional powerhouses of football. But if we look closer at these eleven specific coordinates—from the ACC to the Big Ten—we see a pattern that is MATHEMATICALLY IMPOSSIBLE for most decades to reproduce. Why is it that the oldest prospect in the class, a man with three season-ending injuries, is suddenly the most efficient signal-caller in the league? Why are scouts overlooking 1,000-yard producers for a 'safe' slot receiver from Ohio State? How can a human being with the frame of a power forward move with the lateral velocity of a professional sprinter? If we zoom in right here, on the offensive line tape, we see a VERY different story than the one the media is telling you. We aren't just looking at 'good players.' We are looking at a tectonic shift in the very geometry of the gridiron. To understand why, we first have to look at..."
+    },
+    {
+        "source": "DeeTalk: WR-X",
+        "title": "WR-X: Tetairoa McMillan, Always Open",
+        "image": "https://pantherswire.usatoday.com/gcdn/authoring/authoring-images/2025/08/18/SPAN/85712637007-usatsi-26811815.jpg?crop=3935,2215,x0,y208&width=3200&height=1802&format=pjpg&auto=webp",
+        "tiktok": "",
+        "summary": "Tetairoa McMillan becomes the WR-X because he erased the concept of a 'covered' receiver. He posted a 68% contested catch rate on boundary throws, the highest for a rookie since 2018. While speedsters like Matthew Golden require separation to win, McMillan generated a 115.3 Passer Rating when targeted in tight windows, effectively serving as a 'bailout algorithm' for his quarterback in the red zone.",
+        "summary_long": "Tetairoa McMillan becomes the WR-X because he erased the concept of a 'covered' receiver. He posted a 68% contested catch rate on boundary throws, the highest for a rookie since 2018. While speedsters like Matthew Golden require separation to win, McMillan generated a 115.3 Passer Rating when targeted in tight windows, effectively serving as a 'bailout algorithm' for his quarterback in the red zone."
+    },
+      {
+        "source": "DeeTalk: WR-Y1",
+        "title": "The 2025 Roookie first team",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/046/030/781/small_2x/handwritten-question-mark-on-a-black-background-asking-questions-about-something-free-video.jpg",
+        "tiktok": "",
+        "summary": "Write your pick in the comments!",
+        "summary_long": "If you were to take the combined total weight of every offensive player in the Pro Football Hall of Fame, it would be an ABSOLUTELY MASSIVE number, stretching into the hundreds of thousands of pounds. But what if I told you that a single, specific group of eleven humans—all under the age of 23—is currently on a trajectory to render that entire history a COMPLETELY STATISTICAL ANOMALY? When we look at this map of the United States, we see the traditional powerhouses of football. But if we look closer at these eleven specific coordinates—from the ACC to the Big Ten—we see a pattern that is MATHEMATICALLY IMPOSSIBLE for most decades to reproduce. Why is it that the oldest prospect in the class, a man with three season-ending injuries, is suddenly the most efficient signal-caller in the league? Why are scouts overlooking 1,000-yard producers for a 'safe' slot receiver from Ohio State? How can a human being with the frame of a power forward move with the lateral velocity of a professional sprinter? If we zoom in right here, on the offensive line tape, we see a VERY different story than the one the media is telling you. We aren't just looking at 'good players.' We are looking at a tectonic shift in the very geometry of the gridiron. To understand why, we first have to look at..."
+    },
+    {
+        "source": "DeeTalk: WR-Y",
+        "title": "WR-Y: Emeka Egbuka, Technique Over Everything",
+        "image": "https://statico.profootballnetwork.com/wp-content/uploads/2025/09/07164608/emeka-egbuka-stats-highlights-today-09-07-25-1920x1280.jpg",
+        "tiktok": "",
+        "summary": "Emeka Egbuka holds off the explosive Matthew Golden for the slot role by dominating the 'Middle 3rd' of the field. Egbuka converted 74% of his 3rd-down targets into first downs, acting as the offense's primary chain-mover. While Golden offers superior straight-line speed (4.3s), Egbuka's 0.02s average separation time on option routes made him statistically undefendable in man coverage, racking up 95 receptions.",
+        "summary_long": "Emeka Egbuka holds off the explosive Matthew Golden for the slot role by dominating the 'Middle 3rd' of the field. Egbuka converted 74% of his 3rd-down targets into first downs, acting as the offense's primary chain-mover. While Golden offers superior straight-line speed (4.3s), Egbuka's 0.02s average separation time on option routes made him statistically undefendable in man coverage, racking up 95 receptions."
+    },
+      {
+        "source": "DeeTalk: WR-Z1",
+        "title": "The 2025 Roookie first team",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/046/030/781/small_2x/handwritten-question-mark-on-a-black-background-asking-questions-about-something-free-video.jpg",
+        "tiktok": "",
+        "summary": "Write your pick in the comments!",
+        "summary_long": "If you were to take the combined total weight of every offensive player in the Pro Football Hall of Fame, it would be an ABSOLUTELY MASSIVE number, stretching into the hundreds of thousands of pounds. But what if I told you that a single, specific group of eleven humans—all under the age of 23—is currently on a trajectory to render that entire history a COMPLETELY STATISTICAL ANOMALY? When we look at this map of the United States, we see the traditional powerhouses of football. But if we look closer at these eleven specific coordinates—from the ACC to the Big Ten—we see a pattern that is MATHEMATICALLY IMPOSSIBLE for most decades to reproduce. Why is it that the oldest prospect in the class, a man with three season-ending injuries, is suddenly the most efficient signal-caller in the league? Why are scouts overlooking 1,000-yard producers for a 'safe' slot receiver from Ohio State? How can a human being with the frame of a power forward move with the lateral velocity of a professional sprinter? If we zoom in right here, on the offensive line tape, we see a VERY different story than the one the media is telling you. We aren't just looking at 'good players.' We are looking at a tectonic shift in the very geometry of the gridiron. To understand why, we first have to look at..."
+    },
+    {
+        "source": "DeeTalk: WR-Z",
+        "title": "WR-Z: Luther Burden III, The YAC Anomaly",
+        "image": "https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_4952,h_2785/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/ImagnImages/mmsport/bear_digest/01kaks8fmcgbb0r3nq3b.jpg",
+        "tiktok": "",
+        "summary": "Luther Burden III claims the Z-receiver spot by turning short passes into long touchdowns. He led all rookies with 640 Yards After Catch (YAC), averaging an absurdist 8.1 yards with the ball in his hands. Unlike traditional flankers, Burden operated as an 'offensive weapon,' taking 15% of his snaps from the backfield. He proved that lateral agility is more valuable than vertical speed, forcing 22 missed tackles on screen passes alone.",
+        "summary_long": "Luther Burden III claims the Z-receiver spot by turning short passes into long touchdowns. He led all rookies with 640 Yards After Catch (YAC), averaging an absurdist 8.1 yards with the ball in his hands. Unlike traditional flankers, Burden operated as an 'offensive weapon,' taking 15% of his snaps from the backfield. He proved that lateral agility is more valuable than vertical speed, forcing 22 missed tackles on screen passes alone."
+    },
+    {
+        "source": "DeeTalk: Love yall",
+        "title": "We Got More Than 50 Views On A Video!",
+        "image": "c:\Users\dixon\Pictures\Screenshots\Screenshot 2026-01-15 121146.png",
+        "tiktok": "",
+        "summary": "Luther Burden III claims the Z-receiver spot by turning short passes into long touchdowns. He led all rookies with 640 Yards After Catch (YAC), averaging an absurdist 8.1 yards with the ball in his hands. Unlike traditional flankers, Burden operated as an 'offensive weapon,' taking 15% of his snaps from the backfield. He proved that lateral agility is more valuable than vertical speed, forcing 22 missed tackles on screen passes alone.",
+        "summary_long": "Luther Burden III claims the Z-receiver spot by turning short passes into long touchdowns. He led all rookies with 640 Yards After Catch (YAC), averaging an absurdist 8.1 yards with the ball in his hands. Unlike traditional flankers, Burden operated as an 'offensive weapon,' taking 15% of his snaps from the backfield. He proved that lateral agility is more valuable than vertical speed, forcing 22 missed tackles on screen passes alone."
     }
 ];
