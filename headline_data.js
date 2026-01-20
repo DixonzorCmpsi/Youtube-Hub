@@ -1,46 +1,79 @@
 const headlineData = [
   {
-    "source": "DeeTalk: Dembele Disaster",
-    "title": "Barca Worst Trade Ever",
-    "image": "https://www.fcbarcelona.com/photo-resources/2021/01/16/4eea217b-5d41-4a10-a15d-250d30049aa6/dembele-sevilla.jpg?width=1200&height=750",
-    "summary": "What Do You Think?",
-    "summary_long": "What if I told you... that one of the greatest soccer teams in history... decided to destroy their own future on purpose? It sounds impossible. It sounds like a glitch in the system. But in the summer of twenty twenty-three... Barcelona handed over their most dangerous weapon to their biggest rival... for almost nothing. We are talking about Ousmane Dembele. For years... critics called him a mistake... but the numbers tell a different story. Since leaving Spain... he has transformed into a clinical machine... leading Paris Saint-Germain to three major trophies and winning the twenty twenty-five Ballon d'Or. How does a club... already drowning in over one point four billion dollars of debt... give away the best player in the world for a pittance? Tonight... we are going deep into the data. We are going to look at why Barcelona is struggling in Europe... even with a young star like Lamine Yamal on the pitch. You will see exactly how a single bad trade... can bankrupt a team's chances of winning for a decade. This is not just about a player moving teams... it is a masterclass in how to fail at the highest level. The stats are shocking... and they prove that Barcelona made the biggest mistake in sports history. Let’s get into it."
+    "source": "DeeTalk: Intro Monologue",
+    "title": "The Ghost in the Machine",
+    "image": "INSERT_IMAGE_URL_HERE",
+    "summary": "March twentieth two thousand and thirteen is the day the digital world stopped breaking. Before this date building software was like trying to bake a cake where the ingredients changed every time you moved to a new kitchen. You could spend months perfecting a program on your laptop only for it to completely fail the moment you shared it with a friend or a customer. This simple inconsistency was a global nightmare that cost businesses three hundred billion dollars every single year in wasted time and broken tech. Docker arrived and solved this by inventing a digital shipping container that locks everything a program needs into one unbreakable box. Today ninety-two percent of the internet runs inside these boxes because they guaranteed that if it works once it works everywhere forever. In this video we are going to see how this one simple box paved the way for A-I and why it is the most valuable secret in the modern economy.",
+    "summary_long": "March twentieth two thousand and thirteen is the day the digital world stopped breaking. Before this date building software was like trying to bake a cake where the ingredients changed every time you moved to a new kitchen. You could spend months perfecting a program on your laptop only for it to completely fail the moment you shared it with a friend or a customer. This simple inconsistency was a global nightmare that cost businesses three hundred billion dollars every single year in wasted time and broken tech. Docker arrived and solved this by inventing a digital shipping container that locks everything a program needs into one unbreakable box. Today ninety-two percent of the internet runs inside these boxes because they guaranteed that if it works once it works everywhere forever. In this video we are going to see how this one simple box paved the way for A-I and why it is the most valuable secret in the modern economy."
   },
   {
-    "source": "DeeTalk: The Final Barca Year",
-    "title": "The Speed They Lost",
-    "image": "https://www.fcbarcelona.com/photo-resources/2022/10/24/36be202b-1906-4ec2-bf2e-667b500f1a55/DEMB-L-BAR-A-ATH.jpg?width=1200&height=750",
-    "summary": "In his last season at the Camp Nou... Dembele was the main reason the team could move the ball forward. He ranked in the top one percent of all players for carrying the ball toward the goal. He had eight goals and nine assists... but his real value was how he forced the other team to defend him with two or three players at once. When Barcelona sold him... they didn't just lose a player... they lost the space he created for everyone else.",
-    "summary_long": "In his last season at the Camp Nou... Dembele was the main reason the team could move the ball forward. He ranked in the top one percent of all players for carrying the ball toward the goal. He had eight goals and nine assists... but his real value was how he forced the other team to defend him with two or three players at once. When Barcelona sold him... they didn't just lose a player... they lost the space he created for everyone else."
+    "source": "DeeTalk: The Big Idea",
+    "title": "The Digital Shipping Container",
+    "image": "INSERT_IMAGE_URL_HERE",
+    "summary": "Think of Docker as a standardized shipping container for computer code that keeps everything inside perfectly organized. It allows a program to carry its own private mini-computer environment with it so it never gets confused by the machine it is running on.",
+    "summary_long": "Think of Docker as a standardized shipping container for computer code that keeps everything inside perfectly organized. It allows a program to carry its own private mini-computer environment with it so it never gets confused by the machine it is running on."
   },
   {
-    "source": "DeeTalk: The PSG Takeover",
-    "title": "A New Kind of Striker",
-    "image": "https://pictures.tribuna.com/image/8a8468be-e500-471e-b676-2e035d4d5d0e?width=1920&quality=70",
-    "summary": "Everything changed in December twenty twenty-four... when his coach moved him to the center of the field. Dembele went from a wide player to a pure scorer... hitting thirty-three goals and fifteen assists in a single year. He led Paris to a historic treble... winning the league... the cup... and the Champions League. He proved that he wasn't the problem at Barcelona... the system was.",
-    "summary_long": "Everything changed in December twenty twenty-four... when his coach moved him to the center of the field. Dembele went from a wide player to a pure scorer... hitting thirty-three goals and fifteen assists in a single year. He led Paris to a historic treble... winning the league... the cup... and the Champions League. He proved that he wasn't the problem at Barcelona... the system was."
+    "source": "DeeTalk: Efficiency",
+    "title": "Travel Light and Fast",
+    "image": "INSERT_IMAGE_URL_HERE",
+    "summary": "Old methods were like moving an entire house just to use the kitchen while Docker is like carrying a perfectly packed bento box. Because these boxes are so lightweight they start up in less than a second and allow one computer to do the work of ten.",
+    "summary_long": "Old methods were like moving an entire house just to use the kitchen while Docker is like carrying a perfectly packed bento box. Because these boxes are so lightweight they start up in less than a second and allow one computer to do the work of ten."
   },
   {
-    "source": "DeeTalk: The World's Best",
-    "title": "Winning the Ballon d'Or",
-    "image": "https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/a5d9/live/acd74230-97f7-11f0-beff-6fe19e0dd9d4.jpg",
-    "summary": "By September twenty twenty-five... the debate was over. Ousmane Dembele was named the best player in the world... winning the Ballon d'Or. He beat out his own teammate Kylian Mbappe and Barcelona's new hope... Lamine Yamal. He won five trophies in one year and was named the best player in the Champions League. He is no longer just a fast runner... he is the gold standard for soccer excellence.",
-    "summary_long": "By September twenty twenty-five... the debate was over. Ousmane Dembele was named the best player in the world... winning the Ballon d'Or. He beat out his own teammate Kylian Mbappe and Barcelona's new hope... Lamine Yamal. He won five trophies in one year and was named the best player in the Champions League. He is no longer just a fast runner... he is the gold standard for soccer excellence."
+    "source": "DeeTalk: Implementation Step One",
+    "title": "The Dockerfile Recipe",
+    "image": "INSERT_IMAGE_URL_HERE",
+    "summary": "Starting with Docker is as simple as writing a text file called a Dockerfile which acts as a recipe for your digital box. You simply list your ingredients like the operating system and the code and Docker automatically bakes them into a single file.",
+    "summary_long": "Starting with Docker is as simple as writing a text file called a Dockerfile which acts as a recipe for your digital box. You simply list your ingredients like the operating system and the code and Docker automatically bakes them into a single file."
   },
   {
-    "source": "DeeTalk: The World's Best",
-    "title": "Hes Still Performing",
-    "video": "videos\\Download - 2026-01-18T091142.656.mp4",
-    "summary": "By September twenty twenty-five... the debate was over. Ousmane Dembele was named the best player in the world... winning the Ballon d'Or. He beat out his own teammate Kylian Mbappe and Barcelona's new hope... Lamine Yamal. He won five trophies in one year and was named the best player in the Champions League. He is no longer just a fast runner... he is the gold standard for soccer excellence.",
-    "summary_long": "By September twenty twenty-five... the debate was over. Ousmane Dembele was named the best player in the world... winning the Ballon d'Or. He beat out his own teammate Kylian Mbappe and Barcelona's new hope... Lamine Yamal. He won five trophies in one year and was named the best player in the Champions League. He is no longer just a fast runner... he is the gold standard for soccer excellence."
+    "source": "DeeTalk: Implementation Step Two",
+    "title": "Building Your Image",
+    "image": "INSERT_IMAGE_URL_HERE",
+    "summary": "Once your recipe is ready you run a single command to build what is called an image which is a frozen snapshot of your app. This image is your master copy that can be sent to any computer in the world and will run perfectly every time.",
+    "summary_long": "Once your recipe is ready you run a single command to build what is called an image which is a frozen snapshot of your app. This image is your master copy that can be sent to any computer in the world and will run perfectly every time."
   },
-
-  
   {
-    "source": "DeeTalk: The Hard Truth",
-    "title": "The Yamal Trap",
-    "image": "https://s.yimg.com/ny/api/res/1.2/y3wGEN4BRzJnMpWwRCuXrw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM2MA--/https://media.zenfs.com/en/aol_bbc_articles_618/5f245eb9e06bc745b00e5db33ff76fae",
-    "summary": "Even though Lamine Yamal is a superstar... Barcelona is still struggling. They currently sit fifteenth in the Champions League because they lack a veteran who can break a defense like Dembele can. Yamal is the future... but the team gave away their present-day power for a tiny profit of only twenty-five million euros. It wasn't just a bad trade... it was a complete failure to understand how to win.",
-    "summary_long": "Even though Lamine Yamal is a superstar... Barcelona is still struggling. They currently sit fifteenth in the Champions League because they lack a veteran who can break a defense like Dembele can. Yamal is the future... but the team gave away their present-day power for a tiny profit of only twenty-five million euros. It wasn't just a bad trade... it was a complete failure to understand how to win."
+    "source": "DeeTalk: Implementation Step Three",
+    "title": "Launching the Container",
+    "image": "INSERT_IMAGE_URL_HERE",
+    "summary": "The final step is to tell Docker to run your image which creates a live container where your app actually lives and breathes. You can launch thousands of these identical containers with one click making it easy to grow your app from one user to one million.",
+    "summary_long": "The final step is to tell Docker to run your image which creates a live container where your app actually lives and breathes. You can launch thousands of these identical containers with one click making it easy to grow your app from one user to one million."
+  },
+  {
+    "source": "DeeTalk: User Story",
+    "title": "The Fantasy Football Win",
+    "image": "INSERT_IMAGE_URL_HERE",
+    "summary": "I used these three steps to build a Fantasy Football app that stays perfectly synced across the web without ever crashing. By using a secure tunnel I created a private VIP entrance that let my friends access the app safely right from my home desk.",
+    "summary_long": "I used these three steps to build a Fantasy Football app that stays perfectly synced across the web without ever crashing. By using a secure tunnel I created a private VIP entrance that let my friends access the app safely right from my home desk."
+  },
+  {
+    "source": "DeeTalk: Scaling",
+    "title": "The Power of Many",
+    "image": "INSERT_IMAGE_URL_HERE",
+    "summary": "When a website gets a massive surge of visitors Docker allows it to instantly clone its containers to handle the heavy traffic. This is the secret behind how Netflix and Amazon stay online during their busiest sales days without ever slowing down.",
+    "summary_long": "When a website gets a massive surge of visitors Docker allows it to instantly clone its containers to handle the heavy traffic. This is the secret behind how Netflix and Amazon stay online during their busiest sales days without ever slowing down."
+  },
+  {
+    "source": "DeeTalk: AI Revolution",
+    "title": "The Fuel for A-I",
+    "image": "INSERT_IMAGE_URL_HERE",
+    "summary": "Artificial Intelligence is incredibly complex to set up but Docker simplifies it by acting as a pre-packaged brain for your computer. It allows scientists to ship powerful A-I models to your device with just one click instead of weeks of manual frustration.",
+    "summary_long": "Artificial Intelligence is incredibly complex to set up but Docker simplifies it by acting as a pre-packaged brain for your computer. It allows scientists to ship powerful A-I models to your device with just one click instead of weeks of manual frustration."
+  },
+  {
+    "source": "DeeTalk: The Career",
+    "title": "The Golden Ticket Skill",
+    "image": "INSERT_IMAGE_URL_HERE",
+    "summary": "Mastering these digital containers is the single fastest way to increase your value in the modern global economy. Companies are paying over two hundred thousand dollars to experts who can use Docker to build faster and more reliable digital worlds.",
+    "summary_long": "Mastering these digital containers is the single fastest way to increase your value in the modern global economy. Companies are paying over two hundred thousand dollars to experts who can use Docker to build faster and more reliable digital worlds."
+  },
+  {
+    "source": "DeeTalk: Conclusion",
+    "title": "The Future is Boxed",
+    "image": "INSERT_IMAGE_URL_HERE",
+    "summary": "Docker has turned the chaotic world of software into a predictable and powerful engine for human innovation. If you want to understand how the future of the internet is being built you have to understand the box that holds it all together.",
+    "summary_long": "Docker has turned the chaotic world of software into a predictable and powerful engine for human innovation. If you want to understand how the future of the internet is being built you have to understand the box that holds it all together."
   }
 ];
