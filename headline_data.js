@@ -1,11 +1,5 @@
 const headlineData = [
-  {
-    "source": "DeeTalk: Intro Monologue",
-    "title": "The Ghost in the Machine",
-    "image": "INSERT_IMAGE_URL_HERE",
-    "summary": "March twentieth two thousand and thirteen is the day the digital world stopped breaking. Before this date building software was like trying to bake a cake where the ingredients changed every time you moved to a new kitchen. You could spend months perfecting a program on your laptop only for it to completely fail the moment you shared it with a friend or a customer. This simple inconsistency was a global nightmare that cost businesses three hundred billion dollars every single year in wasted time and broken tech. Docker arrived and solved this by inventing a digital shipping container that locks everything a program needs into one unbreakable box. Today ninety-two percent of the internet runs inside these boxes because they guaranteed that if it works once it works everywhere forever. In this video we are going to see how this one simple box paved the way for A-I and why it is the most valuable secret in the modern economy.",
-    "summary_long": "March twentieth two thousand and thirteen is the day the digital world stopped breaking. Before this date building software was like trying to bake a cake where the ingredients changed every time you moved to a new kitchen. You could spend months perfecting a program on your laptop only for it to completely fail the moment you shared it with a friend or a customer. This simple inconsistency was a global nightmare that cost businesses three hundred billion dollars every single year in wasted time and broken tech. Docker arrived and solved this by inventing a digital shipping container that locks everything a program needs into one unbreakable box. Today ninety-two percent of the internet runs inside these boxes because they guaranteed that if it works once it works everywhere forever. In this video we are going to see how this one simple box paved the way for A-I and why it is the most valuable secret in the modern economy."
-  },
+  
   {
     "source": "DeeTalk: The Big Idea",
     "title": "The Digital Shipping Container",
